@@ -359,27 +359,33 @@ Output the account balance after the attempted transaction, given as a number wi
 
 <h3> Example - Successful Transaction </h3>
 
+```
 Input:
 30 120.00
 
 Output:
 89.50
+```
 
 <h3> Example - Incorrect Withdrawal Amount (not multiple of 5) </h3>
 
+```
 Input:
 42 120.00
 
 Output:
 120.00
+```
 
 <h3> Example - Insufficient Funds </h3>
 
+```
 Input:
 300 120.00
 
 Output:
 120.00
+```
 
 <h3> My Solution </h3>
 
