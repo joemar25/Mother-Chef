@@ -1,6 +1,6 @@
 # My CodeChef Programming Problems and Solution
 
-```
+```Markdown
 The programming language used to solve the problems here in this Journey is Java.
 
 Java is the first langauge I learned while was starting college. I had a lot of fun using it and solving problems with it.
@@ -17,15 +17,15 @@ Now, I am challenging myself to become much better using this language to become
 3. [Volume Control](#volume-control)
 4. [Volume Control](#volume-control)
 
-<br />
+\
 
 ---
 
-<br />
+\
 
 ## The Cheaper Cab
 
-```
+```Markdown
 Problem Code    : CABS
 File Name       : CAB.java
 Status          : Correct Answer
@@ -68,7 +68,7 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 
 #### Explanation
 
-```
+```Markdown
 Test case 1: The first cab service is cheaper than the second cab service.
 
 Test case 2: Both the cab services have the same price.
@@ -154,7 +154,7 @@ Each letter of the output may be printed in either lowercase or uppercase. For e
 
 #### Explanation
 
-```
+```Markdown
 Test case 1: Chef's current rating is 1300, so he should solve problems with difficulty lying in [1300,1500][1300,1500]. Since 1500 lies in [1300,1500][1300,1500], Chef is doing his practice in a recommended way :)
 
 Test case 2: Chef's current rating is 1201, so he should solve problems with difficulty lying in [1201,1401][1201,1401]. Since 1402 does not lie in [1201,1401][1201,1401], Chef is not doing his practice in a recommended way :(
@@ -203,7 +203,7 @@ class ADVANCE {
 
 ## Volume Control
 
-```
+```Markdown
 Contest Code    : START32
 Problem Code    : VOLCONTROL
 File Name       : VOLCONTROL.java
@@ -240,7 +240,7 @@ For each test case, output the minimum number of times Chef has to press a butto
 
 #### Explanation
 
-```
+```Markdown
 Test Case 1: Chef can press the volume up button 44 times to increase the volume from 5050 to 5454.
 
 Test Case 2: Chef can press the volume down button 22 times to decrease the volume from 1212 to 1010.
