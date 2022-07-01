@@ -1,12 +1,8 @@
-// We have populated the solutions for the 10 easiest problems for your support.
-
-// Click on the SUBMIT button to make a submission to this problem.
-
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-class Codechef2 {
+class FLOW007 {
 
     static class Reader {
         final private int BUFFER_SIZE = 1 << 16;

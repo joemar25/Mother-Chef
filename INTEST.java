@@ -1,7 +1,3 @@
-// We have populated the solutions for the 10 easiest problems for your support.
-
-// Click on the SUBMIT button to make a submission to this problem.
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
