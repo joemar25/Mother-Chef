@@ -28,23 +28,22 @@ Now, I am challenging myself to become much better using this language to become
 Problem Code    : CABS
 File Name       : CAB.java
 Status          : Correct Answer
-Submission ID   : 68010879
+Submission ID   : 68012123
 ```
-
 
 ### Problem
 
 Chef has to travel to another place. For this, he can avail any one of two cab services.
 
-- The first cab service charges XX rupees.
-- The second cab service charges YY rupees.
+- The first cab service charges `X` rupees.
+- The second cab service charges `Y` rupees.
 
 Chef wants to spend the minimum amount of money. Which cab service should Chef take?
 
 #### Input Format
 
-- The first line will contain TT - the number of test cases. Then the test cases follow.
-- The first and only line of each test case contains two integers XX and YY - the prices of first and second cab services respectively.
+- The first line will contain `T` - the number of test cases. Then the test cases follow.
+- The first and only line of each test case contains two integers `X` and `Y` - the prices of first and second cab services respectively.
 
 #### Output Format
 For each test case, output FIRST if the first cab service is cheaper, output SECOND if the second cab service is cheaper, output ANY if both cab services have the same price.
@@ -69,16 +68,40 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 #### Explanation:
 
 ``` 
- Test case 1: The first cab service is cheaper than the second cab service.
+Test case 1: The first cab service is cheaper than the second cab service.
 
- Test case 2: Both the cab services have the same price.
+Test case 2: Both the cab services have the same price.
 
- Test case 3: The second cab service is cheaper than the first cab service.
+Test case 3: The second cab service is cheaper than the first cab service.
 ``` 
 
 ### My Solution
-```
-hello
+```Java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Main {
+    static void check(int first, int second) {
+        if (first < second)
+            System.out.println("FIRST");
+        else if (first > second)
+            System.out.println("SECOND");
+        else
+            System.out.println("ANY");
+    }
+
+    public static void main(String[] args) throws Exception {
+        InputStream inputStream = System.in;
+        Scanner in = new Scanner(inputStream);
+        int n = in.nextInt();
+        for (int i = 0; i < n; i++) {
+            int first = in.nextInt();
+            int second = in.nextInt();
+            check(first, second);
+        }
+    }
+}
 ```
 
 
