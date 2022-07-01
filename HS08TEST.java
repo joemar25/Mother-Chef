@@ -1,5 +1,5 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
+import java.io.InputStream;
 
 class Solution {
     public static void main(String[] args) throws Exception {
