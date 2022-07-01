@@ -15,13 +15,13 @@ Now, I am challenging myself to become much better using this language to become
 1. [The Cheaper Cab](#the-cheaper-cab)
 2. [Rating Improvement](#rating-improvement)
 3. [Volume Control](#volume-control)
-3. [Volume Control](#volume-control)
+4. [Volume Control](#volume-control)
 
-<br>
+<br />
 
 ---
 
-<br>
+<br />
 
 ## The Cheaper Cab
 
@@ -271,6 +271,7 @@ class VOLCONTROL {
   in.close();
  }
 }
+
 ```
 
 <br>
