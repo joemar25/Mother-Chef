@@ -409,6 +409,63 @@ class Solution {
 
 ```
 
+---
+
+## Best of Two
+
+```Markdown
+Contest Code    : START45
+Problem Code    : BESTOFTWO
+File Name       : BESTOFTWO.java
+Status          : Correct Answer
+Submission ID   : 68027384
+```
+
+<h3> Problem </h3>
+
+Chef took an examination two times. In the first attempt, he scored XX marks while in the second attempt he scored YY marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score. Determine the final score of the Chef.
+
+<h3> Input Format </h3>
+
+- The first line contains a single integer TT — the number of test cases. Then the test cases follow.
+
+- The first line of each test case contains two integers XX and YY — the marks scored by Chef in the first attempt and second attempt respectively.
+
+<h3> Output Format </h3>
+
+For each test case, output the final score of Chef in the examination.
+
+<h3> Constraints </h3>
+
+- 1 ≤ T ≤ 1000
+- 1 ≤ X, Y ≤ 1000
+
+<h3> Sample </h3>
+
+| Input | Output  |
+| :-----| :------ |
+| 4     |         |
+| 40 60 | 60      |
+| 67 55 | 67      |
+| 50 50 | 50      |
+| 1 100 | 100     |
+
+<h3> Explanation </h3>
+
+```Markdown
+Test Case 1: The best score out of the two attempts is 60.
+
+Test Case 2: The best score out of the two attempts is 67.
+
+Test Case 3: The best score out of the two attempts is 50.
+```
+
+<h3> My Solution </h3>
+
+```Java
+System.out.println("Temp");
+```
+
 ## Template
 
 ```Markdown
@@ -460,47 +517,6 @@ System.out.println("Temp");
 
 # ` "Thank You For Reading This File" `
 
-Best of Two
-Problem Code:
-BESTOFTWO
-Contest Code:
-START45
-
-ID:
-68027384
-
-Problem
-Chef took an examination two times. In the first attempt, he scored XX marks while in the second attempt he scored YY marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score.
-
-Determine the final score of the Chef.
-
-Input Format
-The first line contains a single integer TT — the number of test cases. Then the test cases follow.
-The first line of each test case contains two integers XX and YY — the marks scored by Chef in the first attempt and second attempt respectively.
-Output Format
-For each test case, output the final score of Chef in the examination.
-
-Constraints
-1 \leq T \leq 10001≤T≤1000
-0 \le X, Y \le 1000≤X,Y≤100
-Sample 1:
-Input
-Output
-4
-40 60
-67 55
-50 50
-1 100
-60
-67
-50
-100
-Explanation:
-Test Case 1: The best score out of the two attempts is 6060.
-
-Test Case 2: The best score out of the two attempts is 6767.
-
-Test Case 3: The best score out of the two attempts is 5050.
 
 
 
