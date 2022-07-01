@@ -13,7 +13,7 @@ Now, I am challenging myself to become much better using this language to become
 ## Tables of Contents
 
 1. [The Cheaper Cab](#the-cheaper-cab)
-2. [Rating Improvement](#location-phase2)
+2. [Rating Improvement](#rating-improvement)
 
 <br>
 
@@ -75,6 +75,7 @@ Test case 3: The second cab service is cheaper than the first cab service.
 ``` 
 
 ### My Solution
+
 ```Java
 import java.util.*;
 import java.io.*;
@@ -162,6 +163,35 @@ Test case 4: Chef's current rating is 723, so he should solve problems with diff
 
 Test case 5: Chef's current rating is 1330, so he should solve problems with difficulty lying in [1330,1530][1330,1530]. Since 512 does not lie in [1330,1530][1330,1530], Chef is not doing his practice in a recommended way :(
 ``` 
+
+### My Solution
+
+```Java
+import java.util.*;
+import java.io.*;
+
+class ADVANCE {
+    static Scanner in = new Scanner(System.in);
+
+    static void solve(int x, int y) {
+        if (y >= x && y <= x + 200)
+            System.out.println("YES");
+        else
+            System.out.println("NO");
+    }
+
+    public static void main(String[] args) throws Exception {
+        int x, y, t = in.nextInt();
+        while (t > 0) {
+            x = in.nextInt();
+            y = in.nextInt();
+            solve(x, y);
+            t--;
+        }
+        in.close();
+    }
+}
+```
 
 <br>
 
