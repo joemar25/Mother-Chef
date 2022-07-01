@@ -332,46 +332,54 @@ class FIT {
 }
 ```
 
-## Template
+## ATM
 
 ```Markdown
-Contest Code    : TITLE00
-Problem Code    : TITLE00
-File Name       : TITLE00.java
+Problem Code    : HS08TEST
+File Name       : HS08TEST.java
 Status          : Correct Answer
-Submission ID   : 00
+Submission ID   : 68027028
 ```
 
 <h3> Problem </h3>
 
-Text.
+Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US.
+
+Calculate Pooja's account balance after an attempted transaction.
 
 <h3> Input Format </h3>
 
-- Text.
+- Positive integer 0 < X <= 2000 - the amount of cash which Pooja wishes to withdraw.
+
+- Nonnegative number 0<= Y <= 2000 with two digits of precision - Pooja's initial account balance.
 
 <h3> Output Format </h3>
 
-Text.
+Output the account balance after the attempted transaction, given as a number with two digits of precision. If there is not enough money in the account to complete the transaction, output the current bank balance.
 
-<h3> Constraints </h3>
+<h3> Example - Successful Transaction </h3>
 
-- 1 ≤ T ≤ 100
-- 1 ≤ X, Y ≤ 100
+Input:
+30 120.00
 
-<h3> Sample </h3>
+Output:
+89.50
 
-| Input | Output  |
-| :-----| :------ |
-| 0     |         |
-| 0 0   | 0       |
-| 0 0   | 0       |
+<h3> Example - Incorrect Withdrawal Amount (not multiple of 5) </h3>
 
-<h3> Explanation </h3>
+Input:
+42 120.00
 
-```Markdown
-Test Case 1: Test1.
-```
+Output:
+120.00
+
+<h3> Example - Insufficient Funds </h3>
+
+Input:
+300 120.00
+
+Output:
+120.00
 
 <h3> My Solution </h3>
 
@@ -429,61 +437,6 @@ System.out.println("Temp");
 ---
 
 # ` "Thank You For Reading This File" `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ATM
-Problem Code:
-HS08TEST
-
-ID: 68027028
-
-Problem
-Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US.
-
-Calculate Pooja's account balance after an attempted transaction.
-
-Input
-Positive integer 0 < X <= 2000 - the amount of cash which Pooja wishes to withdraw.
-
-Nonnegative number 0<= Y <= 2000 with two digits of precision - Pooja's initial account balance.
-
-Output
-Output the account balance after the attempted transaction, given as a number with two digits of precision. If there is not enough money in the account to complete the transaction, output the current bank balance.
-
-Example - Successful Transaction
-Input:
-30 120.00
-
-Output:
-89.50
-Example - Incorrect Withdrawal Amount (not multiple of 5)
-Input:
-42 120.00
-
-Output:
-120.00
-Example - Insufficient Funds
-Input:
-300 120.00
-
-Output:
-120.00
-
 
 Best of Two
 Problem Code:
