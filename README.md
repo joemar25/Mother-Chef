@@ -1,4 +1,37 @@
-<h1> My CodeChef Programming Problems and Solution </h1>
+<style type="text/css">
+    body{
+        font-family: "Arial", "Times New Roman", Times, serif;
+        font-size: 12px;
+    }
+    td {  /*Table*/
+        font-size: 8px;
+    }
+    h1.title {
+        font-size: 38px;
+        color: DarkRed;
+    }
+    h1 {
+        font-size: 30px;
+        color: White;
+    }
+    h2 {
+        font-size: 22px;
+        color: DarkBlue;
+    }
+    h3 {
+        font-size: 18px;
+        
+        color: DarkBlue;
+    }
+    code.r{ /*Code block*/
+        font-size: 12px;
+    }
+    pre { /*Code block - determines code spacing between lines*/
+        font-size: 14px;
+    }
+</style>
+
+# My CodeChef Programming Problems and Solution
 
 ```Markdown
 The programming language used to solve the problems here in this Journey is Java.
@@ -15,7 +48,7 @@ Now, I am challenging myself to become much better using this language to become
 1. [The Cheaper Cab](#the-cheaper-cab)
 2. [Rating Improvement](#rating-improvement)
 3. [Volume Control](#volume-control)
-4. [Volume Control](#volume-control)
+4. [Next](#next)
 
 ---
 
