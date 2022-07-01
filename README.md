@@ -167,11 +167,9 @@ Test case 5: Chef's current rating is 1330, so he should solve problems with dif
 ### My Solution
 
 ```Java
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 class ADVANCE {
-    static Scanner in = new Scanner(System.in);
 
     static void solve(int x, int y) {
         if (y >= x && y <= x + 200)
@@ -181,6 +179,7 @@ class ADVANCE {
     }
 
     public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
         int x, y, t = in.nextInt();
         while (t > 0) {
             x = in.nextInt();
@@ -190,8 +189,85 @@ class ADVANCE {
         }
         in.close();
     }
+
 }
 ```
+
+<br>
+
+---
+
+<br>
+
+## Rating Improvement
+
+```
+Contest Code    : COOK142
+Problem Code    : ADVANCE
+File Name       : ADVANCE.java
+Status          : Correct Answer
+Submission ID   : 68015253
+```
+
+### Problem
+
+Chef is watching TV. The current volume of the TV is `X`. Pressing the volume up button of the TV remote increases the volume by 11 while pressing the volume down button decreases the volume by 11. Chef wants to change the volume from XX to YY. Find the minimum number of button presses required to do so.
+
+#### Input Format
+
+For each test case, output on a new line YES if Chef is following the recommended practice style, and NO otherwise.
+
+Each letter of the output may be printed in either lowercase or uppercase. For example, the strings YES, yEs, and Yes will be considered identical.
+
+#### Constraints
+
+>- 1 ≤ T ≤ 100
+>- 1 ≤ X, Y ≤ 4000 
+
+#### Sample 1:
+
+| Input     | Output  | 
+| :---------| :------ |
+| 5         |         |
+| 1300 1500 | YES     |
+| 1201 1402 | NO      |
+| 300 4000  | NO      |
+| 723 805   | YES     |
+| 1330 512  | NO      |
+
+#### Explanation:
+
+``` 
+a
+``` 
+
+### My Solution
+
+```Java
+import java.util.Scanner;
+
+class VOLCONTROL
+{
+    static void check (int x, int y) {
+        if (x > y)
+	        System.out.println(x - y);
+	    else
+	        System.out.println(y - x);
+    }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		while (t > 0) {
+		    int x = in.nextInt();
+		    int y = in.nextInt();
+		    check(x, y);
+		    t--;
+		}
+	}
+}
+```
+
 
 <br>
 

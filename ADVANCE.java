@@ -1,8 +1,6 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 class ADVANCE {
-    static Scanner in = new Scanner(System.in);
 
     static void solve(int x, int y) {
         if (y >= x && y <= x + 200)
@@ -12,6 +10,7 @@ class ADVANCE {
     }
 
     public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
         int x, y, t = in.nextInt();
         while (t > 0) {
             x = in.nextInt();
@@ -21,4 +20,5 @@ class ADVANCE {
         }
         in.close();
     }
+
 }
