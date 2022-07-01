@@ -12,9 +12,8 @@ Now, I am challenging myself to become much better using this language to become
 
 ## Tables of Contents
 
-1. [The Program's Behaviour and Feature](#the-programs-behaviour-and-features)
-2. [The Program's Behaviour and Feature](#the-programs-behaviour-and-features)
-3. [The Cheaper Cab](#the-cheaper-cab)
+1. [The Cheaper Cab](#the-cheaper-cab)
+2. [Rating Improvement](#location-phase2)
 
 <br>
 
@@ -78,10 +77,9 @@ Test case 3: The second cab service is cheaper than the first cab service.
 ### My Solution
 ```Java
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
-class Main {
+class CABS {
     static void check(int first, int second) {
         if (first < second)
             System.out.println("FIRST");
@@ -100,13 +98,70 @@ class Main {
             int second = in.nextInt();
             check(first, second);
         }
+        in.close();
     }
 }
 ```
 
+<br>
 
+---
 
+<br>
 
+## Rating Improvement
+
+```
+Contest Code    : COOK142
+File Name       : COOK142.java
+Problem Code    : ADVANCE
+Status          : Correct Answer
+Submission ID   : 
+```
+
+### Problem
+
+Chef's current rating is `X`, and he wants to improve it. It is generally recommended that a person with rating `X` should solve problems whose difficulty lies in the range [X, X + 200][X, X + 200], i.e, problems whose difficulty is at least `X` and at most X+200X + 200.
+
+You find out that Chef is currently solving problems with a difficulty of `Y`.
+
+Is Chef following the recommended practice or not?
+
+#### Input Format
+
+For each test case, output on a new line YES if Chef is following the recommended practice style, and NO otherwise.
+
+Each letter of the output may be printed in either lowercase or uppercase. For example, the strings YES, yEs, and Yes will be considered identical.
+
+#### Constraints
+
+>- 1 ≤ T ≤ 100
+>- 1 ≤ X, Y ≤ 4000 
+
+#### Sample 1:
+
+| Input     | Output  | 
+| :---------| :------ |
+| 5         |         |
+| 1300 1500 | YES     |
+| 1201 1402 | NO      |
+| 300 4000  | NO      |
+| 723 805   | YES     |
+| 1330 512  | NO      |
+
+#### Explanation:
+
+``` 
+Test case 1: Chef's current rating is 1300, so he should solve problems with difficulty lying in [1300,1500][1300,1500]. Since 1500 lies in [1300,1500][1300,1500], Chef is doing his practice in a recommended way :)
+
+Test case 2: Chef's current rating is 1201, so he should solve problems with difficulty lying in [1201,1401][1201,1401]. Since 1402 does not lie in [1201,1401][1201,1401], Chef is not doing his practice in a recommended way :(
+
+Test case 3: Chef's current rating is 300, so he should solve problems with difficulty lying in [300,500][300,500]. Since 4000 does not lie in [300,500][300,500], Chef is not doing his practice in a recommended way :(
+
+Test case 4: Chef's current rating is 723, so he should solve problems with difficulty lying in [723,923][723,923]. Since 805 lies in [723,923][723,923], Chef is doing his practice in a recommended way :)
+
+Test case 5: Chef's current rating is 1330, so he should solve problems with difficulty lying in [1330,1530][1330,1530]. Since 512 does not lie in [1330,1530][1330,1530], Chef is not doing his practice in a recommended way :(
+``` 
 
 <br>
 

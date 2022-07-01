@@ -20,5 +20,6 @@ class CABS {
             int second = in.nextInt();
             check(first, second);
         }
+        in.close();
     }
 }
