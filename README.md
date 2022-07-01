@@ -14,6 +14,7 @@ Now, I am challenging myself to become much better using this language to become
 
 1. [The Cheaper Cab](#the-cheaper-cab)
 2. [Rating Improvement](#rating-improvement)
+2. [Volume Control](#volume-control)
 
 <br>
 
@@ -45,6 +46,7 @@ Chef wants to spend the minimum amount of money. Which cab service should Chef t
 - The first and only line of each test case contains two integers `X` and `Y` - the prices of first and second cab services respectively.
 
 #### Output Format
+
 For each test case, output FIRST if the first cab service is cheaper, output SECOND if the second cab service is cheaper, output ANY if both cab services have the same price.
 
 You may print each character of FIRST, SECOND and ANY in uppercase or lowercase (for example, any, aNy, Any will be considered identical).
@@ -52,27 +54,26 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 #### Constraints
 
 >- 1 ≤ T ≤ 100
->- 1 ≤ X, Y ≤ 100 
+>- 1 ≤ X, Y ≤ 100
 
-#### Sample 1:
+#### Sample 1
 
-| Input     | Output  | 
+| Input     | Output  |
 | :---------| :------ |
 | 3         |         |
 | 30 65     | FIRST   |
 | 42 42     | ANY     |
 | 90 50     | SECOND  |
 
+#### Explanation
 
-#### Explanation:
-
-``` 
+```
 Test case 1: The first cab service is cheaper than the second cab service.
 
 Test case 2: Both the cab services have the same price.
 
 Test case 3: The second cab service is cheaper than the first cab service.
-``` 
+```
 
 ### My Solution
 
@@ -137,11 +138,11 @@ Each letter of the output may be printed in either lowercase or uppercase. For e
 #### Constraints
 
 >- 1 ≤ T ≤ 100
->- 1 ≤ X, Y ≤ 4000 
+>- 1 ≤ X, Y ≤ 4000
 
-#### Sample 1:
+#### Sample 1
 
-| Input     | Output  | 
+| Input     | Output  |
 | :---------| :------ |
 | 5         |         |
 | 1300 1500 | YES     |
@@ -150,9 +151,9 @@ Each letter of the output may be printed in either lowercase or uppercase. For e
 | 723 805   | YES     |
 | 1330 512  | NO      |
 
-#### Explanation:
+#### Explanation
 
-``` 
+```
 Test case 1: Chef's current rating is 1300, so he should solve problems with difficulty lying in [1300,1500][1300,1500]. Since 1500 lies in [1300,1500][1300,1500], Chef is doing his practice in a recommended way :)
 
 Test case 2: Chef's current rating is 1201, so he should solve problems with difficulty lying in [1201,1401][1201,1401]. Since 1402 does not lie in [1201,1401][1201,1401], Chef is not doing his practice in a recommended way :(
@@ -162,7 +163,7 @@ Test case 3: Chef's current rating is 300, so he should solve problems with diff
 Test case 4: Chef's current rating is 723, so he should solve problems with difficulty lying in [723,923][723,923]. Since 805 lies in [723,923][723,923], Chef is doing his practice in a recommended way :)
 
 Test case 5: Chef's current rating is 1330, so he should solve problems with difficulty lying in [1330,1530][1330,1530]. Since 512 does not lie in [1330,1530][1330,1530], Chef is not doing his practice in a recommended way :(
-``` 
+```
 
 ### My Solution
 
@@ -199,14 +200,14 @@ class ADVANCE {
 
 <br>
 
-## Rating Improvement
+## Volume Control
 
 ```
-Contest Code    : COOK142
-Problem Code    : ADVANCE
-File Name       : ADVANCE.java
+Contest Code    : START32
+Problem Code    : VOLCONTROL
+File Name       : VOLCONTROL.java
 Status          : Correct Answer
-Submission ID   : 68015253
+Submission ID   : 68019500
 ```
 
 ### Problem
@@ -228,49 +229,48 @@ For each test case, output the minimum number of times Chef has to press a butto
 >- 1 ≤ T ≤ 100
 >- 1 ≤ X, Y ≤ 100
 
-#### Sample 1:
+#### Sample 1
 
-| Input | Output  | 
+| Input | Output  |
 | :-----| :------ |
 | 2     |         |
 | 50 54 | 4       |
 | 12 10 | 2       |
 
-#### Explanation:
+#### Explanation
 
-``` 
+```
 Test Case 1: Chef can press the volume up button 44 times to increase the volume from 5050 to 5454.
 
 Test Case 2: Chef can press the volume down button 22 times to decrease the volume from 1212 to 1010.
-``` 
+```
 
 ### My Solution
 
 ```Java
 import java.util.Scanner;
 
-class VOLCONTROL
-{
-    static void check (int x, int y) {
-        if (x > y)
-	        System.out.println(x - y);
-	    else
-	        System.out.println(y - x);
-    }
-	public static void main (String[] args) throws java.lang.Exception
-	{
-	    Scanner in = new Scanner(System.in);
-		int t = in.nextInt();
-		while (t > 0) {
-		    int x = in.nextInt();
-		    int y = in.nextInt();
-		    check(x, y);
-		    t--;
-		}
-	}
+class VOLCONTROL {
+ static void check(int x, int y) {
+  if (x > y)
+   System.out.println(x - y);
+  else
+   System.out.println(y - x);
+ }
+
+ public static void main(String[] args) throws java.lang.Exception {
+  Scanner in = new Scanner(System.in);
+  int t = in.nextInt();
+  while (t > 0) {
+   int x = in.nextInt();
+   int y = in.nextInt();
+   check(x, y);
+   t--;
+  }
+  in.close();
+ }
 }
 ```
-
 
 <br>
 
@@ -279,4 +279,5 @@ class VOLCONTROL
 <br>
 
 # `Thank You For Reading This File`
+
 ---
