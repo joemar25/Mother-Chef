@@ -1,5 +1,15 @@
 # My CodeChef Programming Problems and Solution
 
+```
+The programming language used to solve the problems here in this Journey is Java.
+
+Java is the first langauge I learned while was starting college. I had a lot of fun using it and solving problems with it.
+
+Though I am using different other languages now for different purposes and school stuff's, I am back at using Java again.
+
+Now, I am challenging myself to become much better using this language to become a better problem solver.
+```
+
 ## Tables of Contents
 
 1. [The Program's Behaviour and Feature](#the-programs-behaviour-and-features)
@@ -14,7 +24,13 @@
 
 ## The Cheaper Cab
 
-> CAB.java
+```
+Problem Code    : CABS
+File Name       : CAB.java
+Status          : Correct Answer
+Submission ID   : 68010879
+```
+
 
 ### Problem
 
@@ -37,8 +53,8 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 
 #### Constraints
 
-> - 1 ≤ T ≤ 100
-> - 1 ≤ X, Y ≤ 100
+>- 1 ≤ T ≤ 100
+>- 1 ≤ X, Y ≤ 100 
 
 #### Sample 1:
 
@@ -52,11 +68,13 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 
 #### Explanation:
 
-> Test case 1: The first cab service is cheaper than the second cab service.
+``` 
+ Test case 1: The first cab service is cheaper than the second cab service.
 
-> Test case 2: Both the cab services have the same price.
+ Test case 2: Both the cab services have the same price.
 
-> Test case 3: The second cab service is cheaper than the first cab service.
+ Test case 3: The second cab service is cheaper than the first cab service.
+``` 
 
 ### My Solution
 ```
