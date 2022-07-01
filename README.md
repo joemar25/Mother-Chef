@@ -1,4 +1,4 @@
-# My CodeChef Programming Problems and Solution
+<h1> My CodeChef Programming Problems and Solution </h1>
 
 ```Markdown
 The programming language used to solve the problems here in this Journey is Java.
@@ -17,11 +17,7 @@ Now, I am challenging myself to become much better using this language to become
 3. [Volume Control](#volume-control)
 4. [Volume Control](#volume-control)
 
-\
-
 ---
-
-\
 
 ## The Cheaper Cab
 
@@ -106,15 +102,11 @@ class CABS {
 }
 ```
 
-<br>
-
 ---
-
-<br>
 
 ## Rating Improvement
 
-```
+```Markdown
 Contest Code    : COOK142
 Problem Code    : ADVANCE
 File Name       : ADVANCE.java
@@ -274,12 +266,4 @@ class VOLCONTROL {
 
 ```
 
-<br>
-
----
-
-<br>
-
 # `Thank You For Reading This File`
-
----

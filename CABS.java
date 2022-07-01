@@ -1,5 +1,5 @@
-import java.util.*;
-import java.io.*;
+import java.io.InputStream;
+import java.util.Scanner;
 
 class CABS {
     static void check(int first, int second) {
