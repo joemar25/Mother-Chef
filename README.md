@@ -239,72 +239,97 @@ Test Case 2: Chef can press the volume down button 22 times to decrease the volu
 import java.util.Scanner;
 
 class VOLCONTROL {
-	static void check(int x, int y) {
-		if (x > y)
-			System.out.println(x - y);
-		else
-			System.out.println(y - x);
-	}
+    static void check(int x, int y) {
+        if (x > y)
+            System.out.println(x - y);
+        else
+            System.out.println(y - x);
+    }
 
-	public static void main(String[] args) throws java.lang.Exception {
-		Scanner in = new Scanner(System.in);
-		int t = in.nextInt();
-		while (t > 0) {
-			int x = in.nextInt();
-			int y = in.nextInt();
-			check(x, y);
-			t--;
-		}
-		in.close();
-	}
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        while (t > 0) {
+            int x = in.nextInt();
+            int y = in.nextInt();
+            check(x, y);
+            t--;
+        }
+        in.close();
+    }
 }
 ```
 
-## Test1
+## Fitness
 
 ```Markdown
-Contest Code    : TITLE00
-Problem Code    : TITLE00
-File Name       : TITLE00.java
+Contest Code    : JUNE222
+Problem Code    : FIT
+File Name       : FIT.java
 Status          : Correct Answer
-Submission ID   : 00
+Submission ID   : 68026668
 ```
 
 <h3> Problem </h3>
 
-Text.
+Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is XX km away from his home.
+
+If his office is open on 55 days in a week, find the number of kilometers Chef travels through office trips in a week.
 
 <h3> Input Format </h3>
 
-- Text.
+- First line will contain `T`, number of test cases. Then the test cases follow.
+- Each test case contains of a single line consisting of single integer `X`.
 
 <h3> Output Format </h3>
 
-Text.
+For each test case, output the number of kilometers Chef travels through office trips in a week.
 
 <h3> Constraints </h3>
 
-- 1 ≤ T ≤ 100
-- 1 ≤ X, Y ≤ 100
+- 1 ≤ T ≤ 10
+- 1 ≤ X ≤ 10
 
 <h3> Sample </h3>
 
 | Input | Output  |
 | :-----| :------ |
-| 0     |         |
-| 0 0   | 0       |
-| 0 0   | 0       |
+| 4     |         |
+| 1     | 10      |
+| 3     | 30      |
+| 7     | 70      |
+| 10    | 100     |
 
 <h3> Explanation </h3>
 
 ```Markdown
-Test Case 1: Test1.
+Test case 1: The office is 1 km away. Thus, to go to the office and come back home, Chef has to walk 2 kms in a day. In a week with 5 working days, Chef has to travel 2⋅5 = 102⋅5=10 kms in total.
+
+Test case 2: The office is 3 kms away. Thus, to go to the office and come back home, Chef has to walk 6 kms in a day. In a week with 5 working days, Chef has to travel 6⋅5 = 306⋅5=30 kms in total.
+
+Test case 3: The office is 7 kms away. Thus, to go to the office and come back home, Chef has to walk 14 kms in a day. In a week with 5 working days, Chef has to travel 14⋅5 = 7014⋅5=70 kms in total.
+
+Test case 4: The office is 10 kms away. Thus, to go to the office and come back home, Chef has to walk 20 kms in a day. In a week with 5 working days, Chef has to travel 20⋅5 = 10020⋅5=100 kms in total.
 ```
 
 <h3> My Solution </h3>
 
 ```Java
-System.out.println("Temp");
+import java.util.Scanner;
+
+class FIT {
+
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        while (t > 0) {
+            int x = in.nextInt();
+            System.out.println(x * 10);
+            t--;
+        }
+        in.close();
+    }
+}
 ```
 
 ## Template
@@ -371,48 +396,6 @@ System.out.println("Temp");
 
 
 
-Fitness
-Problem Code:
-FIT
-Contest Code:
-JUNE222
-
-ID: 68026668
-
-Problem
-Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is XX km away from his home.
-
-If his office is open on 55 days in a week, find the number of kilometers Chef travels through office trips in a week.
-
-Input Format
-First line will contain TT, number of test cases. Then the test cases follow.
-Each test case contains of a single line consisting of single integer XX.
-Output Format
-For each test case, output the number of kilometers Chef travels through office trips in a week.
-
-Constraints
-1 \leq T \leq 101≤T≤10
-1 \leq X \leq 101≤X≤10
-Sample 1:
-Input
-Output
-4
-1
-3
-7
-10
-10
-30
-70
-100
-Explanation:
-Test case 11: The office is 11 km away. Thus, to go to the office and come back home, Chef has to walk 22 kms in a day. In a week with 55 working days, Chef has to travel 2\cdot 5 = 102⋅5=10 kms in total.
-
-Test case 22: The office is 33 kms away. Thus, to go to the office and come back home, Chef has to walk 66 kms in a day. In a week with 55 working days, Chef has to travel 6\cdot 5 = 306⋅5=30 kms in total.
-
-Test case 33: The office is 77 kms away. Thus, to go to the office and come back home, Chef has to walk 1414 kms in a day. In a week with 55 working days, Chef has to travel 14\cdot 5 = 7014⋅5=70 kms in total.
-
-Test case 44: The office is 1010 kms away. Thus, to go to the office and come back home, Chef has to walk 2020 kms in a day. In a week with 55 working days, Chef has to travel 20\cdot 5 = 10020⋅5=100 kms in total.
 
 
 

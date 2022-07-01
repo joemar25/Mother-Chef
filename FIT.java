@@ -12,5 +12,4 @@ class FIT {
 		}
 		in.close();
 	}
-
 }
