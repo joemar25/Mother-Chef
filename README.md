@@ -14,7 +14,8 @@ Now, I am challenging myself to become much better using this language to become
 
 1. [The Cheaper Cab](#the-cheaper-cab)
 2. [Rating Improvement](#rating-improvement)
-2. [Volume Control](#volume-control)
+3. [Volume Control](#volume-control)
+3. [Volume Control](#volume-control)
 
 <br>
 
