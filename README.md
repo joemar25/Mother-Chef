@@ -15,7 +15,8 @@ Now, I am challenging myself to become much better using this language to become
 1. [The Cheaper Cab](#the-cheaper-cab)
 2. [Rating Improvement](#rating-improvement)
 3. [Volume Control](#volume-control)
-4. [Next](#next)
+4. [Test1](#test1)
+5. [Template](#template)
 
 ---
 
@@ -23,7 +24,7 @@ Now, I am challenging myself to become much better using this language to become
 
 ```Markdown
 Problem Code    : CABS
-File Name       : CAB.java
+File Name       : CABS.java
 Status          : Correct Answer
 Submission ID   : 68012123
 ```
@@ -260,4 +261,100 @@ class VOLCONTROL {
 }
 ```
 
-# `Thank You For Reading This File`
+## Test1
+
+```Markdown
+Contest Code    : TITLE00
+Problem Code    : TITLE00
+File Name       : TITLE00.java
+Status          : Correct Answer
+Submission ID   : 00
+```
+
+<h3> Problem </h3>
+
+Text.
+
+<h3> Input Format </h3>
+
+- Text.
+
+<h3> Output Format </h3>
+
+Text.
+
+<h3> Constraints </h3>
+
+- 1 ≤ T ≤ 100
+- 1 ≤ X, Y ≤ 100
+
+<h3> Sample </h3>
+
+| Input | Output  |
+| :-----| :------ |
+| 0     |         |
+| 0 0   | 0       |
+| 0 0   | 0       |
+
+<h3> Explanation </h3>
+
+```Markdown
+Test Case 1: Test1.
+```
+
+<h3> My Solution </h3>
+
+```Java
+System.out.println("Temp");
+```
+
+## Template
+
+```Markdown
+Contest Code    : TITLE00
+Problem Code    : TITLE00
+File Name       : TITLE00.java
+Status          : Correct Answer
+Submission ID   : 00
+```
+
+<h3> Problem </h3>
+
+Text.
+
+<h3> Input Format </h3>
+
+- Text.
+
+<h3> Output Format </h3>
+
+Text.
+
+<h3> Constraints </h3>
+
+- 1 ≤ T ≤ 100
+- 1 ≤ X, Y ≤ 100
+
+<h3> Sample </h3>
+
+| Input | Output  |
+| :-----| :------ |
+| 0     |         |
+| 0 0   | 0       |
+| 0 0   | 0       |
+
+<h3> Explanation </h3>
+
+```Markdown
+Test Case 1: Test1.
+```
+
+<h3> My Solution </h3>
+
+```Java
+System.out.println("Temp");
+```
+
+---
+
+# ` "Thank You For Reading This File " `
