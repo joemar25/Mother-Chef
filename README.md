@@ -16,7 +16,9 @@ Now, I am challenging myself to become much better using this language to become
 2. [Rating Improvement](#rating-improvement)
 3. [Volume Control](#volume-control)
 4. [Fitness](#fitness)
-5. [Template](#template)
+5. [ATM](#atm)
+6. [Best of Two](#best-of-two)
+7. [Ezio and Guards](#ezio-and-guards)
 
 ---
 
@@ -206,11 +208,11 @@ Chef is watching TV. The current volume of the TV is `X`. Pressing the volume up
 
 - The first line contains a single integer TT - the number of test cases. Then the test cases follow.
 
-- The first and only line of each test case contains two integers XX and YY - the initial volume and final volume of the TV.
+- The first and only line of each test case contains two integers `X` and `Y` - the initial volume and final volume of the TV.
 
 <h3> Output Format </h3>
 
-For each test case, output the minimum number of times Chef has to press a button to change the volume from XX to YY.
+For each test case, output the minimum number of times Chef has to press a button to change the volume from `X` to `Y`.
 
 <h3> Constraints </h3>
 
@@ -272,7 +274,7 @@ Submission ID   : 68026668
 
 <h3> Problem </h3>
 
-Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is XX km away from his home.
+Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is `X` km away from his home.
 
 If his office is open on 55 days in a week, find the number of kilometers Chef travels through office trips in a week.
 
@@ -423,13 +425,13 @@ Submission ID   : 68027384
 
 <h3> Problem </h3>
 
-Chef took an examination two times. In the first attempt, he scored XX marks while in the second attempt he scored YY marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score. Determine the final score of the Chef.
+Chef took an examination two times. In the first attempt, he scored `X` marks while in the second attempt he scored `Y` marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score. Determine the final score of the Chef.
 
 <h3> Input Format </h3>
 
 - The first line contains a single integer TT — the number of test cases. Then the test cases follow.
 
-- The first line of each test case contains two integers XX and YY — the marks scored by Chef in the first attempt and second attempt respectively.
+- The first line of each test case contains two integers `X` and `Y` — the marks scored by Chef in the first attempt and second attempt respectively.
 
 <h3> Output Format </h3>
 
@@ -478,21 +480,21 @@ Submission ID   : 68030424
 
 <h3> Problem </h3>
 
-Ezio can manipulate at most XX number of guards with the apple of eden.
+Ezio can manipulate at most `X` number of guards with the apple of eden.
 
-Given that there are YY number of guards, predict if he can safely manipulate all of them.
+Given that there are `Y` number of guards, predict if he can safely manipulate all of them.
 
 <h3> Input Format </h3>
 
 - First line will contain TT, number of test cases. Then the test cases follow.
 
-- Each test case contains of a single line of input, two integers XX and YY.
+- Each test case contains of a single line of input, two integers `X` and `Y`.
 
 <h3> Output Format </h3>
 
-For each test case, print \texttt{YES}YES if it is possible for Ezio to manipulate all the guards. Otherwise, print \texttt{NO}NO.
+For each test case, print YES if it is possible for Ezio to manipulate all the guards. Otherwise, print NO.
 
-You may print each character of the string in uppercase or lowercase (for example, the strings \texttt{YeS}YeS, \texttt{yEs}yEs, \texttt{yes}yes and \texttt{YES}YES will all be treated as identical).
+You may print each character of the string in uppercase or lowercase (for example, the strings YeS, yEs, yes and YES will all be treated as identical).
 
 <h3> Constraints </h3>
 
@@ -511,11 +513,11 @@ You may print each character of the string in uppercase or lowercase (for exampl
 <h3> Explanation </h3>
 
 ```Markdown
-Test Case 11: Ezio can manipulate at most 55 guards. Since there are 77 guards, he cannot manipulate all of them.
+Test Case 1: Ezio can manipulate at most 5 guards. Since there are 7 guards, he cannot manipulate all of them.
 
-Test Case 22: Ezio can manipulate at most 66 guards. Since there are 66 guards, he can manipulate all of them.
+Test Case 2: Ezio can manipulate at most 6 guards. Since there are 6 guards, he can manipulate all of them.
 
-Test Case 33: Ezio can manipulate at most 99 guards. Since there is only 11 guard, he can manipulate the guard.
+Test Case 3: Ezio can manipulate at most 9 guards. Since there is only 1 guard, he can manipulate the guard.
 ```
 
 <h3> My Solution </h3>
