@@ -1,8 +1,7 @@
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
-class Test {
+class CABS {
     static void check(int first, int second) {
         if (first < second)
             System.out.println("FIRST");
