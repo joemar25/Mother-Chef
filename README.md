@@ -1,36 +1,3 @@
-<style type="text/css">
-    body{
-        font-family: "Arial", "Times New Roman", Times, serif;
-        font-size: 12px;
-    }
-    td {  /*Table*/
-        font-size: 8px;
-    }
-    h1.title {
-        font-size: 38px;
-        color: DarkRed;
-    }
-    h1 {
-        font-size: 30px;
-        color: White;
-    }
-    h2 {
-        font-size: 22px;
-        color: DarkBlue;
-    }
-    h3 {
-        font-size: 18px;
-        
-        color: DarkBlue;
-    }
-    code.r{ /*Code block*/
-        font-size: 12px;
-    }
-    pre { /*Code block - determines code spacing between lines*/
-        font-size: 14px;
-    }
-</style>
-
 # My CodeChef Programming Problems and Solution
 
 ```Markdown
@@ -216,15 +183,10 @@ class ADVANCE {
         }
         in.close();
     }
-
 }
 ```
 
-<br>
-
 ---
-
-<br>
 
 ## Volume Control
 
@@ -296,7 +258,6 @@ class VOLCONTROL {
   in.close();
  }
 }
-
 ```
 
 # `Thank You For Reading This File`

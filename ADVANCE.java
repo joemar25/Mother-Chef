@@ -20,5 +20,4 @@ class ADVANCE {
         }
         in.close();
     }
-
 }
