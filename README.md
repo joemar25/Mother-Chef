@@ -2,7 +2,7 @@
 
 1. [The Program's Behaviour and Feature](#the-programs-behaviour-and-features)
 2. [The Program's Behaviour and Feature](#the-programs-behaviour-and-features)
-3. [The Cheaper Cab (CAB.java)](#the-cheaper-cab-(CAB.java))
+3. [The Cheaper Cab (CAB.java)](#the-cheaper-cab)
 
 <br>
 
@@ -49,7 +49,9 @@
 <br>
 <br>
 
-# The Cheaper Cab (CAB.java)
+## The Cheaper Cab
+
+> (CAB.java)
 
 ### Problem
 
