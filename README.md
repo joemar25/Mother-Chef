@@ -43,7 +43,7 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 ### Sample 1:
 
 | Input     | Output  | 
-| ---------- -------- |
+| :---------| :------ |
 | 3         |         |
 | 30 65     | FIRST   |
 | 42 42     | ANY     |
