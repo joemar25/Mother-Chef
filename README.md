@@ -48,10 +48,10 @@ For each test case, output FIRST if the first cab service is cheaper, output SEC
 
 You may print each character of FIRST, SECOND and ANY in uppercase or lowercase (for example, any, aNy, Any will be considered identical).
 
-#### Constraints
+Constraints
 
->- 1 ≤ T ≤ 100
->- 1 ≤ X, Y ≤ 100
+- 1 ≤ T ≤ 100
+- 1 ≤ X, Y ≤ 100
 
 #### Sample 1
 
@@ -62,7 +62,7 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 | 42 42     | ANY     |
 | 90 50     | SECOND  |
 
-#### Explanation
+* Explanation
 
 ```Markdown
 Test case 1: The first cab service is cheaper than the second cab service.
@@ -130,8 +130,8 @@ Each letter of the output may be printed in either lowercase or uppercase. For e
 
 #### Constraints
 
->- 1 ≤ T ≤ 100
->- 1 ≤ X, Y ≤ 4000
+- 1 ≤ T ≤ 100
+- 1 ≤ X, Y ≤ 4000
 
 #### Sample 1
 
@@ -212,10 +212,10 @@ Chef is watching TV. The current volume of the TV is `X`. Pressing the volume up
 
 For each test case, output the minimum number of times Chef has to press a button to change the volume from XX to YY.
 
-#### Constraints
+* Constraints
 
->- 1 ≤ T ≤ 100
->- 1 ≤ X, Y ≤ 100
+- 1 ≤ T ≤ 100
+- 1 ≤ X, Y ≤ 100
 
 #### Sample 1
 
