@@ -165,7 +165,6 @@ Test case 5: Chef's current rating is 1330, so he should solve problems with dif
 import java.util.Scanner;
 
 class ADVANCE {
-
     static void solve(int x, int y) {
         if (y >= x && y <= x + 200)
             System.out.println("YES");
@@ -240,24 +239,24 @@ Test Case 2: Chef can press the volume down button 22 times to decrease the volu
 import java.util.Scanner;
 
 class VOLCONTROL {
- static void check(int x, int y) {
-  if (x > y)
-   System.out.println(x - y);
-  else
-   System.out.println(y - x);
- }
+	static void check(int x, int y) {
+		if (x > y)
+			System.out.println(x - y);
+		else
+			System.out.println(y - x);
+	}
 
- public static void main(String[] args) throws java.lang.Exception {
-  Scanner in = new Scanner(System.in);
-  int t = in.nextInt();
-  while (t > 0) {
-   int x = in.nextInt();
-   int y = in.nextInt();
-   check(x, y);
-   t--;
-  }
-  in.close();
- }
+	public static void main(String[] args) throws java.lang.Exception {
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		while (t > 0) {
+			int x = in.nextInt();
+			int y = in.nextInt();
+			check(x, y);
+			t--;
+		}
+		in.close();
+	}
 }
 ```
 
@@ -357,4 +356,187 @@ System.out.println("Temp");
 
 ---
 
-# ` "Thank You For Reading This File " `
+# ` "Thank You For Reading This File" `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fitness
+Problem Code:
+FIT
+Contest Code:
+JUNE222
+
+ID: 68026668
+
+Problem
+Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is XX km away from his home.
+
+If his office is open on 55 days in a week, find the number of kilometers Chef travels through office trips in a week.
+
+Input Format
+First line will contain TT, number of test cases. Then the test cases follow.
+Each test case contains of a single line consisting of single integer XX.
+Output Format
+For each test case, output the number of kilometers Chef travels through office trips in a week.
+
+Constraints
+1 \leq T \leq 101≤T≤10
+1 \leq X \leq 101≤X≤10
+Sample 1:
+Input
+Output
+4
+1
+3
+7
+10
+10
+30
+70
+100
+Explanation:
+Test case 11: The office is 11 km away. Thus, to go to the office and come back home, Chef has to walk 22 kms in a day. In a week with 55 working days, Chef has to travel 2\cdot 5 = 102⋅5=10 kms in total.
+
+Test case 22: The office is 33 kms away. Thus, to go to the office and come back home, Chef has to walk 66 kms in a day. In a week with 55 working days, Chef has to travel 6\cdot 5 = 306⋅5=30 kms in total.
+
+Test case 33: The office is 77 kms away. Thus, to go to the office and come back home, Chef has to walk 1414 kms in a day. In a week with 55 working days, Chef has to travel 14\cdot 5 = 7014⋅5=70 kms in total.
+
+Test case 44: The office is 1010 kms away. Thus, to go to the office and come back home, Chef has to walk 2020 kms in a day. In a week with 55 working days, Chef has to travel 20\cdot 5 = 10020⋅5=100 kms in total.
+
+
+
+ATM
+Problem Code:
+HS08TEST
+
+ID: 68027028
+
+Problem
+Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US.
+
+Calculate Pooja's account balance after an attempted transaction.
+
+Input
+Positive integer 0 < X <= 2000 - the amount of cash which Pooja wishes to withdraw.
+
+Nonnegative number 0<= Y <= 2000 with two digits of precision - Pooja's initial account balance.
+
+Output
+Output the account balance after the attempted transaction, given as a number with two digits of precision. If there is not enough money in the account to complete the transaction, output the current bank balance.
+
+Example - Successful Transaction
+Input:
+30 120.00
+
+Output:
+89.50
+Example - Incorrect Withdrawal Amount (not multiple of 5)
+Input:
+42 120.00
+
+Output:
+120.00
+Example - Insufficient Funds
+Input:
+300 120.00
+
+Output:
+120.00
+
+
+Best of Two
+Problem Code:
+BESTOFTWO
+Contest Code:
+START45
+
+ID:
+68027384
+
+Problem
+Chef took an examination two times. In the first attempt, he scored XX marks while in the second attempt he scored YY marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score.
+
+Determine the final score of the Chef.
+
+Input Format
+The first line contains a single integer TT — the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers XX and YY — the marks scored by Chef in the first attempt and second attempt respectively.
+Output Format
+For each test case, output the final score of Chef in the examination.
+
+Constraints
+1 \leq T \leq 10001≤T≤1000
+0 \le X, Y \le 1000≤X,Y≤100
+Sample 1:
+Input
+Output
+4
+40 60
+67 55
+50 50
+1 100
+60
+67
+50
+100
+Explanation:
+Test Case 1: The best score out of the two attempts is 6060.
+
+Test Case 2: The best score out of the two attempts is 6767.
+
+Test Case 3: The best score out of the two attempts is 5050.
+
+
+
+Ezio and Guards
+Problem Code:
+MANIPULATE
+Contest Code:
+APRIL221
+ID: 68027668
+
+Problem
+Ezio can manipulate at most XX number of guards with the apple of eden.
+
+Given that there are YY number of guards, predict if he can safely manipulate all of them.
+
+Input Format
+First line will contain TT, number of test cases. Then the test cases follow.
+Each test case contains of a single line of input, two integers XX and YY.
+Output Format
+For each test case, print \texttt{YES}YES if it is possible for Ezio to manipulate all the guards. Otherwise, print \texttt{NO}NO.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings \texttt{YeS}YeS, \texttt{yEs}yEs, \texttt{yes}yes and \texttt{YES}YES will all be treated as identical).
+
+Constraints
+1 \leq T \leq 1001≤T≤100
+1 \leq X, Y \leq 1001≤X,Y≤100
+Sample 1:
+Input
+Output
+3
+5 7
+6 6
+9 1
+NO
+YES
+YES
+Explanation:
+Test Case 11: Ezio can manipulate at most 55 guards. Since there are 77 guards, he cannot manipulate all of them.
+
+Test Case 22: Ezio can manipulate at most 66 guards. Since there are 66 guards, he can manipulate all of them.
+
+Test Case 33: Ezio can manipulate at most 99 guards. Since there is only 11 guard, he can manipulate the guard.
+
+
