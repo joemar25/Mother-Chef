@@ -19,6 +19,7 @@ Now, I am challenging myself to become much better using this language to become
 5. [ATM](#atm)
 6. [Best of Two](#best-of-two)
 7. [Ezio and Guards](#ezio-and-guards)
+8. [New](#new)
 
 ---
 
@@ -562,6 +563,13 @@ class Codechef {
     }
 }
 ```
+
+## New1
+
+## New2
+
+## New3
+
 
 ---
 
