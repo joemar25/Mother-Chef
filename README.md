@@ -19,7 +19,7 @@ Now, I am challenging myself to become much better using this language to become
 5. [ATM](#atm)
 6. [Best of Two](#best-of-two)
 7. [Ezio and Guards](#ezio-and-guards)
-8. [New1](#new1)
+8. [Pass or Fail](#pass-or-fail)
 9. [New2](#new2)
 10. [New3](#new3)
 
@@ -566,7 +566,66 @@ class Codechef {
 }
 ```
 
-## New1
+## Pass Or Fail
+
+```Markdown
+Contest Code    : START16
+Problem Code    : PASSORFAIL
+File Name       : PASSORFAIL.java
+Status          : Correct Answer
+Submission ID   : 
+```
+
+<h3> Problem </h3>
+
+Chef is struggling to pass a certain college course.
+
+The test has a total of `N` question, each question carries `3` marks for a correct answer and `-1` for an incorrect answer. Chef is a risk-averse person so he decided to attempt all the questions. It is known that Chef got `X` questions correct and the rest of them incorrect. For Chef to pass the course he must score at least `P` marks.
+
+Will Chef be able to pass the exam or not?
+
+<h3> Input Format </h3>
+
+- First line will contain `T`, number of testcases. Then the testcases follow.
+
+- Each testcase contains of a single line of input, three integers `N`, `X`, `P`.
+
+<h3> Output Format </h3>
+
+For each test case output "PASS" if Chef passes the exam and "FAIL" if Chef fails the exam.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings "pAas", "pass", "Pass" and "PASS" will all be treated as identical).
+
+<h3> Constraints </h3>
+
+- 1 ≤ T ≤ 1000
+- 1 ≤ N ≤ 100
+- 0 ≤ X ≤ N
+- 0 ≤ P ≤ 3 ⋅ N
+
+<h3> Sample </h3>
+
+| Input | Output    |
+| :------ | :------ |
+| 3       |         |
+| 5 2 3   | PASS    |
+| 5 2 4   | FAIL    |
+| 4 0 0   | FAIL    |
+
+<h3> Explanation </h3>
+
+```Markdown
+Test Case 1: Chef gets `2` questions correct giving him `6` marks and since he got `3` questions incorrect so he faces a penalty of `-3`. So Chef's final score is `3` and the passing marks are also `3`, so he passes the exam :)
+
+Test Case 2: Chef's total marks are `3` and since the passing marks are `4`, Chef fails the test :(
+
+Test Case 3: Chef got all the problems wrong and thus his total score is `-4`. Since the passing marks are `0`, Chef fails the exam :(
+```
+
+<h3> My Solution </h3>
+
+```Java
+```
 
 ## New2
 
