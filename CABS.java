@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class CABS {
+
     static void check(int first, int second) {
         if (first > second)
             System.out.println(first);

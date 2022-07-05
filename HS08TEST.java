@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.io.InputStream;
 
-class Solution {
+class HS08TEST {
+
     public static void main(String[] args) throws Exception {
         InputStream inputStream = System.in;
         Scanner in = new Scanner(inputStream);
@@ -13,4 +14,5 @@ class Solution {
             System.out.println(y);
         in.close();
     }
+
 }

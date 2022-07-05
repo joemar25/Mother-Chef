@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class VOLCONTROL {
+
 	static void check(int x, int y) {
 		if (x > y)
 			System.out.println(x - y);

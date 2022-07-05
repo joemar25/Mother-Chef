@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-class Codechef {
+class MANIPULATE {
+
 	public static void main(String[] args) throws Exception {
 		Scanner in = new Scanner(System.in);
 		int t = in.nextInt();
