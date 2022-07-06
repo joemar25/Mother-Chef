@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // Remember that the class name should be "Main" and should be "public".
-public class INTEST { // public class Main is the original
+public class INTEST { 
 	public static void main(String[] args) {
 		// System.in and System.out are input and output streams, respectively.
 		InputStream inputStream = System.in;
