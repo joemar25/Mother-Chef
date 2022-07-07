@@ -21,7 +21,10 @@ Now, I am challenging myself to become much better using this language to become
 7. [Ezio and Guards](#ezio-and-guards)
 8. [Pass or Fail](#pass-or-fail)
 9. [Credit Score](#credit-score)
-10. [New3](#new3)
+10. [Enormous Input Test](#enormous-input-test)
+11. [New1](#new1)
+12. [New2](#new2)
+13. [New3](#new3)
 
 ---
 
@@ -657,14 +660,11 @@ class PASSORFAIL {
 
 ## Credit Score
 
-Problem Code:
-
 ```Markdown
-Contest Code    : LTIME106
-Problem Code    : CREDSCORE
-File Name       : CREDSCORE.java
+Problem Code    : INTEST
+File Name       : INTEST.java
 Status          : Correct Answer
-Submission ID   : 68424065
+Submission ID   : 68424297
 ```
 
 <h3> Problem </h3>
@@ -739,8 +739,76 @@ class CREDSCORE {
 }
 ```
 
-## New3
+## Enormous Input Test
 
+Problem Code:
+INTEST
+
+Problem Code:
+
+```Markdown
+Contest Code    : LTIME106
+Problem Code    : CREDSCORE
+File Name       : CREDSCORE.java
+Status          : Correct Answer
+Submission ID   : 68424065
+```
+
+<h3> Problem </h3>
+
+The purpose of this problem is to verify whether the method you are using to read input data is sufficiently fast to handle problems branded with the enormous Input/Output warning. You are expected to be able to process at least 2.5MB of input data per second at runtime.
+
+<h3> Input </h3>
+
+The input begins with two positive integers n k (n, k<=107). The next n lines of input contain one positive integer ti, not greater than 109, each.
+
+<h3> Output </h3>
+
+Write a single integer to output, denoting how many integers ti are divisible by k.
+
+<h3> Sample 1 </h3>
+
+| Input      | Output  |
+| :--------- | :------ |
+| 7 3        | 4       |
+| 1          |         |
+| 51         |         |
+| 966369     |         |
+| 7          |         |
+| 9          |         |
+| 999996     |         |
+| 11         |         |
+
+<h3> Explanation </h3>
+
+```Markdown
+The integers divisible by 33 are 51, 966369, 9 and 999996. Thus, there are 4 integers in total.
+```
+
+<h3> My Solution </h3>
+
+```Java
+import java.util.Scanner;
+
+class INTEST {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int res = 0;
+        int n = in.nextInt();
+        int k = in.nextInt();
+
+        while (n > 0) {
+            int x = in.nextInt();
+            if (x % k == 0)
+                res++;
+            n--;
+        }
+        System.out.println(res);
+        in.close();
+    }
+}
+```
 
 ---
 

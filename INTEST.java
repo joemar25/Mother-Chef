@@ -1,55 +1,22 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
-// Remember that the class name should be "Main" and should be "public".
-public class INTEST { 
+class INTEST {
+    
 	public static void main(String[] args) {
-		// System.in and System.out are input and output streams, respectively.
-		InputStream inputStream = System.in;
-
-		InputReader in = new InputReader(inputStream);
-
+	    
+		Scanner in = new Scanner(System.in);
+		int res = 0;
 		int n = in.nextInt();
 		int k = in.nextInt();
-
-		int ans = 0;
-
-		for (int i = 0; i < n; i++) {
+		
+		
+		while (n > 0) {
 			int x = in.nextInt();
-
-			if (x % k == 0) {
-				ans++;
-			}
+			if (x % k == 0)
+				res++;
+			n--;
 		}
-
-		System.out.println(ans);
-	}
-
-	static class InputReader {
-		public BufferedReader reader;
-		public StringTokenizer tokenizer;
-
-		public InputReader(InputStream stream) {
-			reader = new BufferedReader(new InputStreamReader(stream), 32768);
-			tokenizer = null;
-		}
-
-		public String next() {
-			while (tokenizer == null || !tokenizer.hasMoreTokens()) {
-				try {
-					tokenizer = new StringTokenizer(reader.readLine());
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-				}
-			}
-			return tokenizer.nextToken();
-		}
-
-		public int nextInt() {
-			return Integer.parseInt(next());
-		}
+		System.out.println(res);
+        in.close();
 	}
 }
