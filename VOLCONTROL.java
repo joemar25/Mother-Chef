@@ -9,7 +9,7 @@ class VOLCONTROL {
 			System.out.println(y - x);
 	}
 
-	public static void main(String[] args) throws java.lang.Exception {
+	public static void main(String[] args) throws Exception {
 		Scanner in = new Scanner(System.in);
 		int t = in.nextInt();
 		while (t > 0) {

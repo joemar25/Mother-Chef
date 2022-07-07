@@ -81,27 +81,27 @@ Test case 3: The second cab service is cheaper than the first cab service.
 <h3> My Solution </h3>
 
 ```Java
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 class CABS {
-    static void check(int first, int second) {
-        if (first < second)
-            System.out.println("FIRST");
-        else if (first > second)
-            System.out.println("SECOND");
-        else
+
+    static void check(int x, int y) {
+        if (x == y)
             System.out.println("ANY");
+        else if (x < y)
+            System.out.println("FIRST");
+        else
+            System.out.println("SECOND");
     }
 
-    public static void main(String[] args) throws Exception {
-        InputStream inputStream = System.in;
-        Scanner in = new Scanner(inputStream);
-        int n = in.nextInt();
-        for (int i = 0; i < n; i++) {
-            int first = in.nextInt();
-            int second = in.nextInt();
-            check(first, second);
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        while(t > 0) {
+            int x = in.nextInt();
+            int y = in.nextInt();
+            check(x, y);
+            t--;
         }
         in.close();
     }
@@ -399,7 +399,7 @@ import java.util.Scanner;
 import java.io.InputStream;
 
 class HS08TEST {
-
+    
     public static void main(String[] args) throws Exception {
         InputStream inputStream = System.in;
         Scanner in = new Scanner(inputStream);
