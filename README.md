@@ -22,7 +22,7 @@ Now, I am challenging myself to become much better using this language to become
 8. [Pass or Fail](#pass-or-fail)
 9. [Credit Score](#credit-score)
 10. [Enormous Input Test](#enormous-input-test)
-11. [New1](#new1)
+11. [Course Registration](#course-registration)
 12. [New2](#new2)
 13. [New3](#new3)
 
