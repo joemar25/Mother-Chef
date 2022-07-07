@@ -810,6 +810,78 @@ class INTEST {
 }
 ```
 
+## Course Registration
+
+```Markdown
+Contest Code    : START32
+Problem Code    : COURSEREG
+File Name       : COURSEREG.java
+Status          : Correct Answer
+Submission ID   : 68439823
+```
+
+<h3> Problem </h3>
+
+There is a group of `N` friends who wish to enroll in a course together. The course has a maximum capacity of `M` students that can register for it. If there are `K` other students who have already enrolled in the course, determine if it will still be possible for all the `N` friends to do so or not.
+
+<h3> Input Format </h3>
+
+- The first line contains a single integer `T` - the number of test cases. Then the test cases follow.
+
+- Each test case consists of a single line containing three integers `N`, `M` and `K` - the size of the friend group, the capacity of the course and the number of students already registered for the course.
+
+<h3> Constraints </h3>
+
+- 1 ≤ T ≤ 1000
+- 1 ≤ N ≤ M ≤ 100
+- 0 ≤ K ≤ M
+
+<h3> Sample 1 </h3>
+
+| Input     | Output |
+| :-------- | :----- |
+| 7         |        |
+| 2 50 27   | Yes    |
+| 5 40 38   | No     |
+| 100 100 0 | Yes    |
+
+<h3> Explanation </h3>
+
+```Markdown
+Test Case 1: The 2 friends can enroll in the course as it has enough seats to accommodate them and the 27 other students at the same time..
+
+Test Case 2: The course does not have enough seats to accommodate the 5 friends and the 38 other students at the same time.
+```
+
+<h3> My Solution </h3>
+
+```Java
+import java.util.Scanner;
+
+class COURSEREG {
+    
+    static void check(int n, int m, int k) {
+        int size = n + k;
+        if (size <= m)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for (; t > 0; t--) {
+            int n = in.nextInt();
+            int m = in.nextInt();
+            int k = in.nextInt();
+            check(n, m, k);
+        }
+        in.close();
+    }
+}
+```
+
 ---
 
 # ` "Thank You For Reading This File" `
