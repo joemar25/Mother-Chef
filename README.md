@@ -20,7 +20,7 @@ Now, I am challenging myself to become much better using this language to become
 6. [Best of Two](#best-of-two)
 7. [Ezio and Guards](#ezio-and-guards)
 8. [Pass or Fail](#pass-or-fail)
-9. [New2](#new2)
+9. [Credit Score](#credit-score)
 10. [New3](#new3)
 
 ---
@@ -655,7 +655,89 @@ class PASSORFAIL {
 }
 ```
 
-## New2
+## Credit Score
+
+Problem Code:
+
+```Markdown
+Contest Code    : LTIME106
+Problem Code    : CREDSCORE
+File Name       : CREDSCORE.java
+Status          : Correct Answer
+Submission ID   : 68424065
+```
+
+<h3> Problem </h3>
+
+To access CRED programs, one needs to have a credit score of `750` or more.
+Given that the present credit score is `X`, determine if one can access CRED programs or not.
+
+If it is possible to access CRED programs, output `YES`, otherwise output `NO`.
+
+<h3> Input Format </h3>
+
+- The first and only line of input contains a single integer `X`, the credit score.
+
+<h3> Output Format </h3>
+
+Print `YES` if it is possible to access CRED programs. Otherwise, print `NO`.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings `YeS`, `yEs`, `yes` and `YES` will all be treated as identical).
+
+<h3> Constraints </h3>
+
+- 0 ≤ X ≤ 1000
+
+<h3> Subtasks </h3>
+
+- Subtask 1 (100 points): Original constraints.
+
+<h3> Sample 1 </h3>
+
+| Input   | Output  |
+| :------ | :------ |
+| 821     | YES     |
+
+<h3> Explanation </h3>
+
+```Markdown
+Since 823 ≥ 750, it is possible to access CRED programs.
+```
+
+<h3> Sample 2 </h3>
+
+| Input   | Output  |
+| :------ | :------ |
+| 251     | NO      |
+
+<h3> Explanation </h3>
+
+```Markdown
+Since 251 < 750, it is not possible to access CRED programs.
+```
+
+<h3> My Solution </h3>
+
+```Java
+import java.util.Scanner;
+
+class CREDSCORE {
+
+    static void check(int x) {
+        if (0 <= x && x <= 1000 && x >= 750)
+            System.out.println("YES");
+        else
+            System.out.println("NO");
+    }
+
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+        check(x);
+        in.close();
+    }
+}
+```
 
 ## New3
 
