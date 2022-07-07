@@ -661,10 +661,11 @@ class PASSORFAIL {
 ## Credit Score
 
 ```Markdown
-Problem Code    : INTEST
-File Name       : INTEST.java
+Contest Code    : LTIME106
+Problem Code    : CREDSCORE
+File Name       : CREDSCORE.java
 Status          : Correct Answer
-Submission ID   : 68424297
+Submission ID   : 68424065
 ```
 
 <h3> Problem </h3>
@@ -747,11 +748,10 @@ INTEST
 Problem Code:
 
 ```Markdown
-Contest Code    : LTIME106
-Problem Code    : CREDSCORE
-File Name       : CREDSCORE.java
+Problem Code    : INTEST
+File Name       : INTEST.java
 Status          : Correct Answer
-Submission ID   : 68424065
+Submission ID   : 68424297
 ```
 
 <h3> Problem </h3>
