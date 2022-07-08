@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class CNTWRD {
 
 	public static void main(String[] args) throws Exception {
