@@ -11,14 +11,15 @@ class COURSEREG {
     }
 
     public static void main(String[] args) throws Exception {
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
-        for (; t > 0; t--) {
-            int n = in.nextInt();
-            int m = in.nextInt();
-            int k = in.nextInt();
-            check(n, m, k);
+        try (Scanner in = new Scanner(System.in)) {
+            int t = in.nextInt();
+            for (; t > 0; t--) {
+                int n = in.nextInt();
+                int m = in.nextInt();
+                int k = in.nextInt();
+                check(n, m, k);
+            }
+            in.close();
         }
-        in.close();
     }
 }
