@@ -1,4 +1,4 @@
-<h1> My CodeChef Programming Problems and Solution </h3>
+<h1> Programming Problems and Solution </h3>
 
 ```Markdown
 The programming language used to solve the problems here in this Journey is Java.
