@@ -2,19 +2,16 @@ def twoSum(nums, target):
     n = len(nums)
     lo = 0
     hi = n - 1
-    indices = [0, 1]
 
     if (n == 2):
-        return indices
+        return [0, 1]
 
     while (lo < n - 1) :
         while (hi > lo):
             if ((nums[lo] + nums[hi]) == target):
-                indices[0] = lo
-                indices[1] = hi
-                return indices
+                return nums[lo], nums[hi]
             hi -= 1
         lo += 1
-    return indices
+    return nums[lo], nums[hi]
 
 print(twoSum([3,2,4], 6))
