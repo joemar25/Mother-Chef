@@ -1,37 +1,55 @@
 import json
 import time
 
-data_file = 'Random\AlertSystemForContamenants\data.json'
-
-# Define alert thresholds for each contaminant - USE DENR standards
-alert_thresholds = {
-    "CO2": 800,
-    "CO": 7,
-    "O3": 90,
-    "NO2": 40,
-    "SO2": 15,
-    "VOCs": 180,
-    "PM": 40
+"""
+MAR: Change this to DENR Standards
+"""
+ALERT_THRESHOLDS = {
+    "CO2": 800, # Carbon Dioxide
+    "CO": 30,   # Carbon Monoxide (CO) /
+    "O3": 140,  # Ozone (O3) /
+    "NO2": 150, # Nitrogen Dioxide (NO2) /
+    "SO2": 80,  # Sulfur Dioxide (SO2) /
+    "VOCs": 180, # Volatile Organic Compounds (VOCs)
+    "PM": 40    # Particulate Matter (PM)
 }
 
-# Read data from the JSON file
-with open(data_file, 'r') as file:
-    air_quality_data = json.load(file)
+def read_air_quality_data(data_file):
+    with open(data_file, 'r') as file:
+        return json.load(file)
 
-# Iterate through each entry in air quality data
-for counter, entry in enumerate(air_quality_data, start=1):
-    print(f"#{counter}")
-    contaminants_on_alert = [contaminant for contaminant, level in entry.items() if contaminant in alert_thresholds and level > alert_thresholds[contaminant]]
-    
-    if contaminants_on_alert:
-        print("At least one contaminant is on alert! Notify the user.")
-    
-    for contaminant, level in entry.items():
-        if contaminant in alert_thresholds:
-            alert_message = " - Alert" if contaminant in contaminants_on_alert else ""
-            print(f"{contaminant}={level}{alert_message}")
-    
-    print()
-    time.sleep(1)
+def generate_alert_message(contaminants_on_alert):
+    if len(contaminants_on_alert) == len(ALERT_THRESHOLDS):
+        return "All contaminants are on alert!"
+    elif contaminants_on_alert:
+        if len(contaminants_on_alert) == 1:
+            return f"Alert: {contaminants_on_alert[0]} is on alert."
+        else:
+            contaminants_string = ', '.join(contaminants_on_alert)
+            return f"Alert: {contaminants_string} are on alert."
+    else:
+        return ""
 
-# print(f"Alert: {contaminant}={le  vel}, exceeds threshold of {alert_thresholds[contaminant]}")
+def check_contaminants():
+
+    """
+    MAR: Change this location or use the firebase
+    """
+    data_file = 'Random\AlertSystemForContamenants\data.json'
+    
+    air_quality_data = read_air_quality_data(data_file)
+
+    for entry_index, entry in enumerate(air_quality_data, start=1):
+        print(f"#{entry_index}")
+        contaminants_on_alert = [contaminant for contaminant, level in entry.items() if contaminant in ALERT_THRESHOLDS and level > ALERT_THRESHOLDS[contaminant]]
+
+        for contaminant, level in entry.items():
+            if contaminant in ALERT_THRESHOLDS:
+                alert_message = " - Alert" if contaminant in contaminants_on_alert else ""
+                print(f"{contaminant}={level}{alert_message}")
+
+        print(generate_alert_message(contaminants_on_alert))
+        time.sleep(1)
+
+if __name__ == "__main__":
+    check_contaminants()
