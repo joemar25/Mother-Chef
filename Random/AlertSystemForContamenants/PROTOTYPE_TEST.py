@@ -5,7 +5,8 @@ import time
 MAR: Change this to DENR Standards
 """
 ALERT_THRESHOLDS = {
-    "CO2": 800, # Carbon Dioxide
+    "CO2": 800, # Carbon Dioxide (CO2)
+    
     "CO": 30,   # Carbon Monoxide (CO) /
     "O3": 140,  # Ozone (O3) /
     "NO2": 150, # Nitrogen Dioxide (NO2) /
