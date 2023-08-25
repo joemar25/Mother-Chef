@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3D Model Example</title>
+    <style>
+        #canvas-container {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script>
+        // Set up scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Load your 3D model
+        const loader = new THREE.GLTFLoader();
+        let model;
+        loader.load('path/to/your/model.glb', (gltf) => {
+            model = gltf.scene;
+            scene.add(model);
+        });
+
+        // Set up controls for interaction
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        camera.position.z = 5;
+
+        // Render loop
+        const animate = () => {
+            requestAnimationFrame(animate);
+            if (model) {
+                // Manipulate the model (e.g., rotate)
+                model.rotation.x += 0.005;
+                model.rotation.y += 0.005;
+            }
+            controls.update(); // Update controls
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+    </script>
+</body>
+
+</html>
