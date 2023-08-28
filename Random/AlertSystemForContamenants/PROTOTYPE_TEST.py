@@ -5,13 +5,14 @@ import time
 MAR: Change this to DENR Standards
 """
 ALERT_THRESHOLDS = {
+    "Temperature": 63,
+    "Humidity": 63,
+
     "CO2": 800, # Carbon Dioxide (CO2)
-    
     "CO": 30,   # Carbon Monoxide (CO) /
     "O3": 140,  # Ozone (O3) /
     "NO2": 150, # Nitrogen Dioxide (NO2) /
     "SO2": 80,  # Sulfur Dioxide (SO2) /
-    
     "VOCs": 180, # Volatile Organic Compounds (VOCs)
     "PM": 40    # Particulate Matter (PM)
 }
