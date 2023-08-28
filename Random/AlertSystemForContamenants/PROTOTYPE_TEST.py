@@ -4,17 +4,19 @@ import time
 """
 MAR: Change this to DENR Standards
 """
+
+# indoors
 ALERT_THRESHOLDS = {
     "Temperature": 63,
     "Humidity": 63,
 
-    "CO2": 800, # Carbon Dioxide (CO2)
-    "CO": 30,   # Carbon Monoxide (CO) /
-    "O3": 140,  # Ozone (O3) /
-    "NO2": 150, # Nitrogen Dioxide (NO2) /
-    "SO2": 80,  # Sulfur Dioxide (SO2) /
-    "PM": 40,   # Particulate Matter (PM)
-    "VOCs": 180 # Volatile Organic Compounds (VOCs)
+    "CO": 6.11,   # Carbon Monoxide (CO) -ppm
+    "CO2": 5000, # Carbon Dioxide (CO2) -ppm
+    "O3": 0.005,  # Ozone (O3) -ppm
+    "SO2": 1,  # Sulfur Dioxide (SO2) -ppm
+    "NO2": 0.11, # Nitrogen Dioxide (NO2) -ppm
+    "PM": 0.00001,  # Particulate Matter (PM) -ppm 
+    "VOCs":  0.25 # Volatile Organic Compounds (VOCs)-ppm
 }
 
 def read_air_quality_data(data_file):
