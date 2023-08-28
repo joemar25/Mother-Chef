@@ -13,8 +13,8 @@ ALERT_THRESHOLDS = {
     "O3": 140,  # Ozone (O3) /
     "NO2": 150, # Nitrogen Dioxide (NO2) /
     "SO2": 80,  # Sulfur Dioxide (SO2) /
-    "VOCs": 180, # Volatile Organic Compounds (VOCs)
-    "PM": 40    # Particulate Matter (PM)
+    "PM": 40,   # Particulate Matter (PM)
+    "VOCs": 180 # Volatile Organic Compounds (VOCs)
 }
 
 def read_air_quality_data(data_file):
