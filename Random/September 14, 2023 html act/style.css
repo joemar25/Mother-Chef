@@ -1,0 +1,80 @@
+/* Global,CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #364973;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header h1 {
+  color: #333;
+}
+
+.form-label {
+  color: #555;
+  display: block;
+}
+
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.submit-btn {
+  font-size: 12px;
+  border: 0px;
+  color: #fff;
+  background-color: #49c2a3;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.msg {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.msg a {
+  text-transform: capitalize;
+  color: #49c2a3;
+  text-decoration: none;
+}
+
+/* exclusive for sign up page */
+.agreement-msg {
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.agreement-msg a {
+  color: blue;
+}
