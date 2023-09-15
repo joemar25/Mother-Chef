@@ -14,7 +14,7 @@ def equation(x):
 
 
 # (2)
-def f(x):
+def proving(x):
     # distribute x value to a and b since x is a list [a, b]
     a, b = x
     # use equation to determine if a and b is equal
@@ -40,7 +40,14 @@ def main():
 
     # loop through the interval and print the result
     for counter, i in enumerate(intervals):
-        print(f"{counter + 1}. interval {i},  {f(i)}")
+        print(f"{counter + 1}. interval {i},  {proving(i)}")
+
+    # get the interval that satisfies the condition
+    intervals = list(filter(proving, intervals))
+    print(f"\nDoing  {intervals}...")
+
+
+    
 
 
 if __name__ == "__main__":
