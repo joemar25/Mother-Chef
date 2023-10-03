@@ -6,6 +6,8 @@
  * JJ NOTE: I'm not sure if this is the correct way to do it, but I tried my best to follow the instructions...
  */
 
+
+ 
 public class JerahmilJayFelipe_BSIT2A_MidTermActivityProject {
 
     public static void main(String[] args) {
