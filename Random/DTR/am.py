@@ -2,6 +2,7 @@ def convertHours(total_hours):
     hours, minutes = divmod(total_hours * 60, 60)
     return f"{int(hours):02d}:{int(minutes):02d}"
 
+
 am_in = "06:35"
 am_out = "12:00"
 
