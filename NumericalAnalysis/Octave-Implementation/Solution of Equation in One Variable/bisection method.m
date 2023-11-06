@@ -6,23 +6,23 @@
 
 % The Function implemented using the Algorithm for Bisection Method for root finding
 function p = bisection_method(f, a, b, TOL, N)
-
-    #{
-    Note:-10 field width to the format specifiers in the printf function.
-    This means that each output will be left - justified and padded with spaces
-    to a total width of 10 characters.
-    #}
     printf('%-10s %-10s %-10s %-10s %-10s\n', 'n', 'An', 'Bn', 'Pn', 'f(Pn)')
 
     % Step 1
     i = 1;
     FA = f(a);
 
+    % A vector to store the values of p
+    P = [];
+
     % Step 2
     while i <= N
         % Step 3
         p = a + (b - a) / 2;
         FP = f(p);
+
+        % This will store the value of p in the vector
+        P = [P; p];
 
         % Step 4
         if FP == 0 || (b - a) / 2 < TOL
@@ -48,6 +48,12 @@ function p = bisection_method(f, a, b, TOL, N)
     % Step 7
     % printf('Method failed after %d iterations\n', N);
     % printf('The procedure was unsuccessful.\n');
+
+    % Plot the values of p
+    plot(P, 'o-');
+    title('Values of p in each iteration');
+    xlabel('Iteration');
+    ylabel('p');
 end
 
 % clear screen
