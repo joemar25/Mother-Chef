@@ -1,11 +1,17 @@
+% BSCS 4A
+% Borrero, Jan Lance A.
+% Cardiño, Joemar J.
+% Roque, Kyle Arteal B.
+% Zaragoza, Matthew A.
+
 % The Function implemented using the Algorithm for Bisection Method for root finding
-function p = bisection_method(f, a, b, TOL, N_0)
+function p = bisection_method(f, a, b, TOL, N)
   % Step 1
   i = 1;
   FA = f(a);
 
   % Step 2
-  while i <= N_0
+  while i <= N
     % Step 3
     p = a + (b - a) / 2;
     FP = f(p);
@@ -29,7 +35,7 @@ function p = bisection_method(f, a, b, TOL, N_0)
   end
 
   % Step 7
-  fprintf('Method failed after %d iterations, N_0 = %d\n', N_0, N_0);
+  fprintf('Method failed after %d iterations\n', N_0);
   fprintf('The procedure was unsuccessful.\n');
 end
 
@@ -37,11 +43,11 @@ end
 clc, clear
 
 % Main Area for Input and Displaying of Output
-f = @(x) x^3 + 4*x^2 - 10;
+f = @(x) x^3 + 4*x^2 - 10;  % equation
+TOL = 5;                    % tolerance
+N = 10;                     % max num of iterations
 a = 1;
 b = 2;
-TOL = 5;
-N_0 = 10;
 
-p = bisection_method(f, a, b, TOL, N_0);
+p = bisection_method(f, a, b, TOL, N);
 
