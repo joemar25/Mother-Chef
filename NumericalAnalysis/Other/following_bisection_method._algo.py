@@ -1,5 +1,3 @@
-from fractions import Fraction
-
 # INPUT endpoints a,b; tolerance TOL; maximum numbers of iterations N.
 # OUTPUT approximate solution p or message of failure.
 
@@ -25,12 +23,15 @@ f = lambda x: ((x) ** 3) + 4 * ((x) ** 2) - 10
 # INPUT endpoints a,b; tolerance TOL; maximum numbers of iterations n_0.
 a = 1
 b = 2
-TOL = 5
-N = 10
+TOL = 1
+N = 13
 
 # Step 1 Set i = 1
 i = 1
 FA = f(a)
+
+# Print the header for the table
+print("{:<10s} {:<10s} {:<10s} {:<10s} {:<10s}".format("n", "An", "Bn", "Pn", "f(Pn)"))
 
 # Step 2 While i <= N do Steps 3-6.
 while i <= N:
@@ -40,8 +41,8 @@ while i <= N:
 
     # Step 4 If FP = 0 or (b - a) / 2 < TOL then
     if FP == 0 or (b - a) / 2 < TOL:
-        print(f"Approximate solution: {p}")  # Procedure completed successfully.
-        break
+        print("{:<10d} {:<10f} {:<10f} {:<10f} {:<10f}".format(i, a, b, p, FP))
+        # break
 
     # Step 5 Set i = i + 1.
     i += 1
@@ -54,6 +55,6 @@ while i <= N:
         b = p  # FA is unchanged.
 
 # Step 7 Output ('Method failed after N iterations, N, =',N_o);
-else:
-    print(f"Method failed after N iterations, N = {i}")
-    print("The procedure was unsuccessful.")
+# else:
+# print(f"Method failed after N iterations, N = {i}")
+# print("The procedure was unsuccessful.")
