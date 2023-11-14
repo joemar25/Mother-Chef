@@ -6,24 +6,27 @@
 
 % The main function of our program
 function main()
+
     clc; clear;
 
     % Main Area for Input
-    f = @(x) x^3 + 4 * x^2 - 10; % equation
-    TOL = 10^-4; % tolerance 1e-4 or 10 ^ -4
-    N = 13; % max num of iterations
-    a = 1;
-    b = 2;
+    f = @(x) x^3 + 4 * x^2 - 10;  % equation
+
+    a = 1;                        % endpoints
+    b = 2;                        % endpoints
+    TOL = 10^-4;
+    N = 13;
 
     % Function calling
     bisection_method(f, a, b, TOL, N);
+
 end
 
-% The Function implemented using the Algorithm for Bisection Method
+% The Function implemented for Bisection Method
 function bisection_method(f, a, b, TOL, N)
 
     success = false;
-    fprintf('%-10s %-10s %-10s %-10s %-10s\n', 'n', 'An', 'Bn', 'Pn', 'f(Pn)')
+    fprintf('bisection method\n\n%-10s %-10s %-10s %-10s %-10s\n', 'n', 'An', 'Bn', 'Pn', 'f(Pn)')
 
     % Step 1
     i = 1;
@@ -34,6 +37,7 @@ function bisection_method(f, a, b, TOL, N)
 
     % Step 2
     while i <= N
+
         % Print the values of n, An, Bn, Pn, and f(Pn)
         p = a + (b - a) / 2;
         FP = f(p);
@@ -48,7 +52,7 @@ function bisection_method(f, a, b, TOL, N)
 
         % Step 4
         if FP == 0 || abs(b - a) / 2 < TOL
-            fprintf('Procedure completed successfully. Root: %f\n', p);
+            fprintf('\nProcedure completed successfully. Root: %f\n', p);
 
             success = true;
             return
@@ -69,7 +73,7 @@ function bisection_method(f, a, b, TOL, N)
 
     % Step 7 - if not success
     if ~success
-        fprintf('Method failed after %d iterations\n', N);
+        fprintf('\nMethod failed after %d iterations\n', N);
         fprintf('The procedure was unsuccessful.\n');
     end
 
@@ -78,4 +82,5 @@ function bisection_method(f, a, b, TOL, N)
     % title('Values of p in each iteration');
     % xlabel('Iteration');
     % ylabel('p');
+
 end

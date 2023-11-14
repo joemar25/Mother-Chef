@@ -6,38 +6,54 @@
 
 % The main function of our program
 function main()
+
     clc; clear;
 
     % Main Area for Input
-    f = @(x) x^3 + 4 * x^2 - 10; % equation
+    g = @(x) x^3 + 4 * x^2 - 10; % equation
+
+    p = 1.5; % initial approximation
     TOL = 10^-4; % tolerance 1e-4 or 10 ^ -4
     N = 13; % max num of iterations
-    a = 1;
-    b = 2;
+
 
     % Function calling
-    fixed_point_iteration(f, a, b, TOL, N);
+    fixed_point_iteration(g, p, TOL, N);
+
 end
 
-% The Function implemented using the Algorithm for Bisection Method for root finding
-function fixed_point_iteration(g, P0, TOL, N)
+% The Function implemented for Fix-Point Iteration
+function fixed_point_iteration(g, p, TOL, N)
+
+    % Step 1
     i = 1;
+
+    % Step 2
     while i <= N
-        P = g(P0);
-        if abs(P - P0) < TOL
+
+        % Step 3
+        P = g(p);
+
+        % Step 4
+        if abs(P - p) < TOL
             p = P;
             return;
         end
+        printf("%d\n", p);
+
+
+        % Step 5
         i = i + 1;
-        P0 = P;
+
+        % Step 6
+        p = P;
     end
+
+    % Step 7
     fprintf('The method failed after %d iterations, N = %d\n', i, N);
+
 end
 
-
-
-
-
-
-
+% actual root must be 1.365230013 for this example
+% TODO the printing and explanation plus testing
 
