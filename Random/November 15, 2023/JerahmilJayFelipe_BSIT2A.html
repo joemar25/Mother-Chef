@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shih Tzu Paradise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6;
+            color: #333;
+        }
+
+        header {
+            background-color: #6C63FF;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: default;
+        }
+
+        nav {
+            background-color: #6C63FF;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-links {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .container section {
+            margin-bottom: 30px;
+        }
+
+        .container h2 {
+            color: #6C63FF;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .nav-links:hover {
+            color: #ff9900;
+        }
+
+
+        .container {
+            padding: 30px;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .carousel-caption h2 {
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 2px 2px black;
+            -webkit-text-stroke: 1px black;
+        }
+
+        #carouselExample {
+            margin-bottom: 30px;
+        }
+
+        #carouselExample img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: #6C63FF;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .cta-button,
+        .scroll-up-button {
+            background-color: #6C63FF;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover,
+        .scroll-up-button:hover {
+            background-color: #554FB8;
+        }
+
+        footer {
+            background-color: #6C63FF;
+            text-align: center;
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .scroll-up-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+        }
+
+        header,
+        nav {
+            background-color: #4d4dff;
+            color: #ffffff;
+        }
+
+        footer p {
+            cursor: default;
+            color: #ffffff;
+            text-align: center;
+            bottom: 0;
+        }
+
+        #gallery img {
+            margin-bottom: 20px;
+        }
+
+        #community {
+            background-color: #f4f4f4;
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our Shih Tzu Paradise!</h1>
+    </header>
+
+    <nav>
+        <a href="#about" class="nav-links">About Shih Tzus</a> |
+        <a href="#why-love" class="nav-links">Why We Love Shih Tzus</a> |
+        <a href="#caring" class="nav-links">Caring for Your Shih Tzu</a> |
+        <a href="#cta" class="nav-links">Find Your Shih Tzu</a> |
+        <a href="#community" class="nav-links">Our Community</a> |
+        <a href="#contact" class="nav-links">Contact Us</a>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="https://w0.peakpx.com/wallpaper/155/130/HD-wallpaper-shih-tzu-little-cute-dog-curly-puppy-cute-animals-pets-field-yellow-flowers-green-grass.jpg"
+                    class="d-block w-100" alt="Shih Tzu Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to Our Shih Tzu Paradise!</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://c4.wallpaperflare.com/wallpaper/60/783/649/dog-look-background-wallpaper-preview.jpg"
+                    class="d-block w-100" alt="Shih Tzu Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Discover the Charm of Shih Tzus</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://w0.peakpx.com/wallpaper/980/400/HD-wallpaper-dogs-shih-tzu.jpg" class="d-block w-100"
+                    alt="Shih Tzu Image 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Find Your Perfect Shih Tzu Companion</h2>
+                </div>
+            </div>
+            <!-- Add more carousel items with different images and captions as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container" id="gallery">
+        <section>
+            <h2>Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://w0.peakpx.com/wallpaper/392/1/HD-wallpaper-shih-tzu-fluffy-dog-flight-cute-dog-thumbnail.jpg"
+                        class="img-fluid" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://w0.peakpx.com/wallpaper/848/553/HD-wallpaper-shih-tzu-chinese-lion-dog-white-fluffy-little-dog-pets-green-grass-dogs-chinese-breed-of-dogs-chrysanthemum-dog-thumbnail.jpg"
+                        class="img-fluid" alt="Gallery Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://w0.peakpx.com/wallpaper/553/869/HD-wallpaper-cute-shih-tzu-cute-shih-tzu-puppy-dog-thumbnail.jpg"
+                        class="img-fluid" alt="Gallery Image 3">
+                </div>
+                <!-- Add more gallery images as needed -->
+            </div>
+        </section>
+    </div>
+
+    <div class="container" id="about">
+        <section>
+            <h2>About Shih Tzus</h2>
+            <p>Shih Tzus are a small, sturdy breed known for their friendly and outgoing personalities. Originating from
+                China, these dogs were bred to be companions and they excel at their job, often being described as
+                "little lions". Shih Tzus are recognized by their long, flowing double coats and distinctive pushed-in
+                faces.</p>
+        </section>
+    </div>
+
+    <div class="container" id="why-love">
+        <section class="hero-section">
+            <h2>Why We Love Shih Tzus</h2>
+            <p>Shih Tzus are more than just pets; they're members of our family. Their loving and gentle nature makes
+                them perfect companions. They're great with kids and other pets, and their alert and confident demeanor
+                makes them excellent watchdogs. Despite their small size, Shih Tzus have a big personality and a charm
+                that is irresistible.</p>
+            <a href="#community" class="cta-button">Join Our Community</a>
+        </section>
+    </div>
+
+    <div class="container" id="caring">
+        <section>
+            <h2>Caring for Your Shih Tzu</h2>
+            <p>Shih Tzus require regular grooming due to their long coats. Regular baths and daily brushing will keep
+                their hair free from mats. They also need regular exercise to keep them healthy and happy. Despite their
+                small size, Shih Tzus are quite active and enjoy short walks and playtime.</p>
+        </section>
+    </div>
+
+    <div class="container" id="cta">
+        <section class="hero-section">
+            <h2>Find Your Perfect Shih Tzu Companion Today!</h2>
+            <p>Explore our available Shih Tzu puppies and give a loving home to your new furry friend.</p>
+            <a href="#" class="cta-button">Adopt Now</a>
+        </section>
+    </div>
+
+    <div class="container" id="community">
+        <section>
+            <h2>Our Shih Tzu Community</h2>
+            <p>We invite you to join our community of Shih Tzu lovers. Share your stories, ask questions, and learn from
+                experienced Shih Tzu owners. Whether you're a long-time owner or considering getting a Shih Tzu, our
+                community is here to help.</p>
+            <a href="#" class="cta-button">Contact Us</a>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <p>Contact Us: jfelipe@forbescollege.org | Phone: (123) 456-7890 </p>
+    </footer>
+
+    <div class="scroll-up-button" onclick="scrollToTop()">Scroll Up</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        // Scroll-up button functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll-up button based on scroll position
+        window.onscroll = function () {
+            var scrollButton = document.querySelector('.scroll-up-button');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        };
+
+        // Activate Carousel
+        document.addEventListener('DOMContentLoaded', function () {
+            var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+                interval: 3000,
+                wrap: true
+            });
+        });
+    </script>
+</body>
+
+</html>
