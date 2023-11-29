@@ -1,21 +1,15 @@
-% BSCS 4A
-% Borrero, Jan Lance A.
-% Cardiño, Joemar J.
-% Roque, Kyle Arteal B.
-% Zaragoza, Matthew A.
-
 % The main function of our program
 function main()
 
     clc; clear;
 
     % Main Area for Input
-    f = @(x) x^3 + 4 * x^2 - 10;  % equation
+    f = @(x) x^6 - x - 1;         % equation
 
-    a = 1;                        % endpoints
-    b = 2;                        % endpoints
-    TOL = 10^-4;
-    N = 13;
+    a = 1;                        % interval a
+    b = 2;                        % interval b
+    TOL = 10^-5;
+    N = 20;
 
     % Function calling
     bisection_method(f, a, b, TOL, N);
@@ -26,14 +20,11 @@ end
 function bisection_method(f, a, b, TOL, N)
 
     success = false;
-    fprintf('bisection method\n\n%-10s %-10s %-10s %-10s %-10s\n', 'n', 'An', 'Bn', 'Pn', 'f(Pn)')
+    fprintf('bisection method\n\n%-10s %-10s %-10s %-10s %-10s\n', 'n', 'a', 'b', 'p', 'f(p)')
 
     % Step 1
     i = 1;
     FA = f(a);
-
-    % A vector to store the values of p
-    % P = [];
 
     % Step 2
     while i <= N
@@ -46,9 +37,6 @@ function bisection_method(f, a, b, TOL, N)
         % Step 3
         p = a + (b - a) / 2;
         FP = f(p);
-
-        % This will store the value of p in the vector
-        % P = [P; p];
 
         % Step 4
         if FP == 0 || abs(b - a) / 2 < TOL
@@ -76,11 +64,4 @@ function bisection_method(f, a, b, TOL, N)
         fprintf('\nMethod failed after %d iterations\n', N);
         fprintf('The procedure was unsuccessful.\n');
     end
-
-    % Plot the values of p
-    % plot(P, 'o-');
-    % title('Values of p in each iteration');
-    % xlabel('Iteration');
-    % ylabel('p');
-
 end

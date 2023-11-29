@@ -15,7 +15,11 @@ Table of Contents:
 2. [Matrix](#matrix)
    - [LU Factorization](#lu-factorization)
 
-Note: We did not perform any of academic dishonesty such as cheating and plagiarism for the subject as Rule for creating this finals project.
+Note:
+
+1. We did not perform any of academic dishonesty such as cheating and plagiarism for the subject as Rule for creating this finals project.
+2. N variable in displaying the output for bisection, fix-point, etc. is the n-number of iterations.
+3. **clc; clear;** is used so that the command window and workspace are cleared, respectively. This helps in removing any previous variables or outputs that might interfere with the current Octave session.
 
 ## Solving with one variable
 
@@ -46,9 +50,81 @@ Step 7 Output ('Method failed after N iterations, N, =',N_o);
        STOP.
 ```
 
-Instruction:
+Instruction Problem and Solution:
 
-1. Create an Octave program that follows the given algorithm for the bisection method. The output must display, for each iteration, the intervals being used, the computed midpoints, the function values at the endpoints of the intervals, and the function values at the obtained midpoints.
+1. Create an Octave program that follows the given algorithm for the bisection method. The output must display, **for each iteration**, **the intervals being used**, **the computed midpoints**, **the function values at the endpoints of the intervals**, and **the function values at the obtained midpoints**.
+
+Our Code:
+
+```octave
+function main()
+
+    clc; clear;
+
+    % Main Area for Input
+    f = @(x) x^3 + 4 * x^2 - 10;  % equation
+
+    a = 1;                        % interval a
+    b = 2;                        % interval b
+    TOL = 10^-4;
+    N = 13;
+
+    % Function calling
+    bisection_method(f, a, b, TOL, N);
+
+end
+
+% The Function implemented for Bisection Method
+function bisection_method(f, a, b, TOL, N)
+
+    success = false;
+    fprintf('bisection method\n\n%-10s %-10s %-10s %-10s %-10s\n', 'n', 'a', 'b', 'p', 'f(p)')
+
+    % Step 1
+    i = 1;
+    FA = f(a);
+
+    % Step 2
+    while i <= N
+
+        % Print the values of n, An, Bn, Pn, and f(Pn)
+        p = a + (b - a) / 2;
+        FP = f(p);
+        fprintf('%-10d %-10f %-10f %-10f %-10f\n', i, a, b, p, FP);
+
+        % Step 3
+        p = a + (b - a) / 2;
+        FP = f(p);
+
+        % Step 4
+        if FP == 0 || abs(b - a) / 2 < TOL
+            fprintf('\nProcedure completed successfully. Root: %f\n', p);
+
+            success = true;
+            return
+        end
+
+        % Step 5
+        i = i + 1;
+
+        % Step 6
+        if FA * FP > 0
+            a = p;
+            FA = FP;
+        else
+            b = p;
+        end
+
+    end
+
+    % Step 7 - if not success
+    if ~success
+        fprintf('\nMethod failed after %d iterations\n', N);
+        fprintf('The procedure was unsuccessful.\n');
+    end
+end
+```
+
 
 2. Construct separate codes that use your program for the bisection method to solve the following problems for the given intervals.
 
@@ -156,3 +232,9 @@ Step 7 OUTPUT (l[i][j] for j = 1 and i = 1, ...., n);
 Code Implementation:
 
 Note: This algo, is only for getting the Lower and Upper Matrix, no function for the final calculation.
+
+
+
+## References
+https://www.testingdocs.com/octave-clear-command/
+https://docs.octave.org/v4.2.1/Cursor-Motion.html
