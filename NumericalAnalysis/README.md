@@ -47,11 +47,16 @@ Step 7 Output ('Method failed after N iterations, N, =',N_o);
 ```
 
 Instruction:
+
 1. Create an Octave program that follows the given algorithm for the bisection method. The output must display, for each iteration, the intervals being used, the computed midpoints, the function values at the endpoints of the intervals, and the function values at the obtained midpoints.
+
 2. Construct separate codes that use your program for the bisection method to solve the following problems for the given intervals.
-a. Find the largest root of **f(x) = (x^6) − x − 1 = 0** accurate to within 10^−5 for the interval [1, 2]. Discuss your observations regarding the convergence of the approximations.
-b. Solve the equation **f(x) = (e^x) − (x^3) − 5 within the interval [−2, −1] accurate to at least within 10^−4.
-c. What will happen if the bisection method is used with the function **f(x) = 1 / x − 2** and the interval is [3, 7]? You may try different values of tolerance if possible.
+
+   a. Find the largest root of **f(x) = (x^6) − x − 1 = 0** accurate to within **10^−5** for the interval **[1, 2]**. Discuss your observations regarding the convergence of the approximations.
+
+   b. Solve the equation **f(x) = (e^x) − (x^3) − 5** within the interval **[−2, −1]** accurate to at least within **10^−4**.
+
+   c. What will happen if the bisection method is used with the function **f(x) = 1 / x − 2** and the interval is **[3, 7]**? You may try different values of tolerance if possible.
 
 Code Implementation:
 
