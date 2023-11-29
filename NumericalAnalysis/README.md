@@ -1,18 +1,25 @@
 # Numerical Analysis
 
+1. [Joemar J. Cardiño](https://github.com/joemar25)
+2. [Jan Lance Borrero](https://github.com/JanRoShin)
+3. [Engelrhand Matthew Zaragoza](https://github.com/MatVFX23)
+4. [Kyle Arteal Roque](https://github.com/koyaaakeys)
+
 Table of Contents:
 
 1. [Solving With One Variable](#solving-with-one-variable)
-   1. [Bisection Method](#bisection-method)
-   2. [Fixed Point Method](#fixed-point-method)
-   3. [Newton's Method](#newtons-method)
-   4. [Secant Method](#secant-method)
+   - [Bisection Method](#bisection-method)
+   - [Fixed Point Method](#fixed-point-method)
+   - [Newton's Method](#newtons-method)
+   - [Secant Method](#secant-method)
 2. [Matrix](#matrix)
-   1. [LU Factorization](#lu-factorization)
+   - [LU Factorization](#lu-factorization)
+
+Note: We did not perform any of academic dishonesty such as cheating and plagiarism for the subject as Rule for creating this finals project.
 
 ## Solving with one variable
 
-According to the given material, the root-finding problem refers to finding a root or solution of an equation of the form f(x) = 0, where f(x) is a given function. A root of this equation is also called a zero of the function f.
+The root-finding problem refers to finding a root or solution of an equation of the form f(x) = 0, where f(x) is a given function. A root of this equation is also called a zero of the function f.
 
 The Bisection Method and Fixed-Point Method are two numerical methods used to solve equations in one variable. The Bisection Method involves repeatedly halving subintervals of an interval and locating the half containing the root. The Fixed-Point Method involves finding a fixed point of a function, which is a number at which the value of the function does not change when the function is applied.
 
@@ -24,69 +31,29 @@ Pseudocode:
 
 ```octave
 Step 1 Set i = 1
-             FA = f(a)
+       FA = f(a)
 Step 2 While i <= N do Steps 3-6.
      Step 3 Set p = a + (b - a) / 2; (computer p_i.)
      Step 4 If FP = 0 or (b - a) / 2 < TOL then
-           OUTPUT (p); (Procedure completed successfully.)
-           STOP.
+            OUTPUT (p); (Procedure completed successfully.)
+            STOP.
      Step 5 Set i = i + 1.
      Step 6 If FA * FP > 0 then set a = p; (Computer a_i, bi.)
-                                     FA = FP
-                           else set b = p. (FA is unchanged.))
+                                    FA = FP
+                            else set b = p. (FA is unchanged.)
 Step 7 Output ('Method failed after N iterations, N, =',N_o);
        (The procedure was unsuccessful.)
        STOP.
 ```
 
+Instruction:
+1. Create an Octave program that follows the given algorithm for the bisection method. The output must display, for each iteration, the intervals being used, the computed midpoints, the function values at the endpoints of the intervals, and the function values at the obtained midpoints.
+2. Construct separate codes that use your program for the bisection method to solve the following problems for the given intervals.
+a. Find the largest root of **f(x) = (x^6) − x − 1 = 0** accurate to within 10^−5 for the interval [1, 2]. Discuss your observations regarding the convergence of the approximations.
+b. Solve the equation **f(x) = (e^x) − (x^3) − 5 within the interval [−2, −1] accurate to at least within 10^−4.
+c. What will happen if the bisection method is used with the function **f(x) = 1 / x − 2** and the interval is [3, 7]? You may try different values of tolerance if possible.
+
 Code Implementation:
-
-```octave
-function main()
-    clc; clear;
-
-    f = @(x) x^3 + 4 * x^2 - 10;
-    a = 1;
-    b = 2;
-    TOL = 10^-4;
-    N = 13;
-
-    bisection_method(f, a, b, TOL, N);
-end
-
-function bisection_method(f, a, b, TOL, N)
-    success = false;
-    fprintf('bisection method\n\n%-10s %-10s %-10s %-10s %-10s\n', 'n', 'An', 'Bn', 'Pn', 'f(Pn)')
-    i = 1;
-    FA = f(a);
-    % P = [];
-    while i <= N
-        p = a + (b - a) / 2;
-        FP = f(p);
-        fprintf('%-10d %-10f %-10f %-10f %-10f\n', i, a, b, p, FP);
-        p = a + (b - a) / 2;
-        FP = f(p);
-        % P = [P; p];
-        if FP == 0 || abs(b - a) / 2 < TOL
-            fprintf('\nProcedure completed successfully. Root: %f\n', p);
-            success = true;
-            return
-        end
-        i = i + 1;
-        if FA * FP > 0
-            a = p;
-            FA = FP;
-        else
-            b = p;
-        end
-    end
-
-    if ~success
-        fprintf('\nMethod failed after %d iterations\n', N);
-        fprintf('The procedure was unsuccessful.\n');
-    end
-end
-```
 
 ### Fixed Point Method
 
@@ -99,10 +66,6 @@ Pseudocode:
 ```
 
 Code Implementation:
-
-```octave
-
-```
 
 ### Note for Bisection and Fixed Point Method
 
@@ -117,10 +80,6 @@ Pseudocode:
 ```
 
 Code Implementation:
-
-```octave
-
-```
 
 ### Secant Method
 
@@ -149,10 +108,6 @@ Step 7 OUTPUT ('The method failed after N iterations, N=',N);
 ```
 
 Code Implementation:
-
-```octave
-
-```
 
 ## Matrix
 
@@ -194,9 +149,5 @@ Step 7 OUTPUT (l[i][j] for j = 1 and i = 1, ...., n);
 ```
 
 Code Implementation:
-
-```octave
-
-```
 
 Note: This algo, is only for getting the Lower and Upper Matrix, no function for the final calculation.
