@@ -12,8 +12,23 @@ function main()
     N = 20;
 
     % Function calling
-    bisection_method(f, a, b, TOL, N);
+    result = equation_checker(f, a, b);
+    if result == 1
+      bisection_method(f, a, b, TOL, N);
+    else
+      display("first condition not satisfied");
+    endif
 
+end
+
+% Determines whether the function values
+% fa and fb have different signs, assigning true
+% if they do and false otherwise.
+function result = equation_checker(f, a, b)
+    fa = f(a);
+    fb = f(b);
+
+    result = fa * fb < 0;
 end
 
 % The Function implemented for Bisection Method

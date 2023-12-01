@@ -17,15 +17,13 @@ Table of Contents:
 
 Note:
 
-1. We did not perform any of academic dishonesty such as cheating and plagiarism for the subject as Rule for creating this finals project.
-2. N variable in displaying the output for bisection, fix-point, etc. is the n-number of iterations.
+1. We did not perform any academic dishonesty, such as cheating and plagiarism, for this subject as a rule for creating this finals project.
+2. N variable in displaying the output for bisection, fix-point, etc., is the n-number of iterations.
 3. **clc; clear;** is used so that the command window and workspace are cleared, respectively. This helps in removing any previous variables or outputs that might interfere with the current Octave session.
 
 ## Solving with one variable
 
 The root-finding problem refers to finding a root or solution of an equation of the form f(x) = 0, where f(x) is a given function. A root of this equation is also called a zero of the function f.
-
-The Bisection Method and Fixed-Point Method are two numerical methods used to solve equations in one variable. The Bisection Method involves repeatedly halving subintervals of an interval and locating the half containing the root. The Fixed-Point Method involves finding a fixed point of a function, which is a number at which the value of the function does not change when the function is applied.
 
 ### Bisection Method
 
@@ -56,6 +54,8 @@ Instruction Problem and Solution:
 
 Our Code:
 
+This is the main function, where we designed for input of the equations, putting required variables, and calling the method that will execute the code implementation of the pseducode above. Note that clc, and clear is used here because we want the users to just plug and play the code without worrying about the memory and the console view (this can be removed if desired).
+
 ```octave
 function main()
 
@@ -73,8 +73,11 @@ function main()
     bisection_method(f, a, b, TOL, N);
 
 end
+```
 
-% The Function implemented for Bisection Method
+This is the function that we implemented based on the pseducode above. This has the modifications that is necessary to solve the activity problem. We remove the STOP or equivalent to break in octave to follow the desired output. We also added success variable as alternative for the STOP/break in the pseudocode to follow the desired output, that will do the trick to be triggered if the condition in step 4 is followed.
+
+```octave
 function bisection_method(f, a, b, TOL, N)
 
     success = false;
@@ -125,6 +128,7 @@ function bisection_method(f, a, b, TOL, N)
 end
 ```
 
+Note: The functions above is used to solve #2 below, same structure would be used for each code but the equations and other paremeters would be changed.
 
 2. Construct separate codes that use your program for the bisection method to solve the following problems for the given intervals.
 
@@ -134,7 +138,7 @@ end
 
    c. What will happen if the bisection method is used with the function **f(x) = 1 / x − 2** and the interval is **[3, 7]**? You may try different values of tolerance if possible.
 
-Code Implementation:
+Note: Codes for these problems are available in the 1_Bisection_Method file, each marked as 'a.m', 'b.m', and 'c.m'.
 
 ### Fixed Point Method
 
@@ -157,7 +161,20 @@ It is important to note that the Fixed-Point Theorem provides conditions for the
 Pseudocode:
 
 ```octave
-
+input p, TOL, N
+Step 1
+Set i = 1
+step 2
+while i <= N do step 3-6
+  step 3 set p=P - f(P)/f'(P). (compute p)
+  step 4 if |p-P| < TOL then
+    OUTPUT (p); (The procedure was successful)
+    STOP.
+  Step 5. Set i = i + 1
+  Step 6 Set P = p (Update P)
+Step 7 OUTPUT ('The method failed after N iterations, N=',N);
+(The Procedure was unsuccessful)
+STOP
 ```
 
 Code Implementation:
@@ -233,8 +250,7 @@ Code Implementation:
 
 Note: This algo, is only for getting the Lower and Upper Matrix, no function for the final calculation.
 
-
-
 ## References
+
 https://www.testingdocs.com/octave-clear-command/
 https://docs.octave.org/v4.2.1/Cursor-Motion.html
