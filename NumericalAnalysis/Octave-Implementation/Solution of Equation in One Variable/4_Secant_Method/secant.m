@@ -9,6 +9,7 @@ function main()
 
     clc; clear;
 
+
     % Main Area for Input
     f = @(x) x^2 - 2 * x - 1;
 
