@@ -181,6 +181,8 @@ Code Implementation:
 
 ### Secant Method
 
+This solves the problem of the Newtons-Rhapson method above where slope is hard to get the derrivative. This method approximate the slope of the function by the derivative of the function. The derivative of the function is the derivative of the function with respect to the variable.
+
 Pseudocode:
 
 ```octave

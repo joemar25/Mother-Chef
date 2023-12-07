@@ -25,6 +25,9 @@ end
 % The Function implemented for Fix-Point Iteration
 function fixed_point_iteration(g, p, TOL, N)
 
+    fprintf('fixed-point method\n\n%-10s %-10s %-10s %-10s %-10s\n', 'n', 'a', 'b', 'p', 'f(p)')
+
+
     % Step 1
     i = 1;
 
@@ -33,6 +36,8 @@ function fixed_point_iteration(g, p, TOL, N)
 
         % Step 3
         P = g(p);
+
+        %fprintf('%-10d %-10f %-10f %-10f\n', i, abs(P - p), p, P);
 
         % Step 4
         if abs(P - p) < TOL
