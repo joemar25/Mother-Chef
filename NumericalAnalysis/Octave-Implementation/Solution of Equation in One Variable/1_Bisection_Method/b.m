@@ -12,8 +12,20 @@ function main()
     N = 15;
 
     % Function calling
-    bisection_method(f, a, b, TOL, N);
+    result = equation_checker(f, a, b);
+    if result == 1
+      bisection_method(f, a, b, TOL, N);
+    else
+      display("bisection's first condition not satisfied");
+    endif
 
+end
+
+function result = equation_checker(f, a, b)
+    fa = f(a);
+    fb = f(b);
+
+    result = fa * fb < 0;
 end
 
 % The Function implemented for Bisection Method

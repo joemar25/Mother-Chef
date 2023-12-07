@@ -16,7 +16,7 @@ function main()
     if result == 1
       bisection_method(f, a, b, TOL, N);
     else
-      display("first condition not satisfied");
+      display("bisection's first condition not satisfied");
     endif
 
 end

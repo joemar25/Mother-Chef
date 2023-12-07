@@ -69,9 +69,24 @@ function main()
     TOL = 10^-4;
     N = 13;
 
-    % Function calling
-    bisection_method(f, a, b, TOL, N);
+    result = equation_checker(f, a, b);
+    if result == 1
+      bisection_method(f, a, b, TOL, N);
+    else
+      display("bisection's first condition not satisfied");
+    endif
 
+end
+```
+
+Before applying the bisection method to solve an equation, you need to make sure that the given function f(x) is continuous on the interval [a,b] and that f(a) \* f(b) < 0, meaning that the function values at the endpoints have opposite signs.
+
+```octave
+function result = equation_checker(f, a, b)
+    fa = f(a);
+    fb = f(b);
+
+    result = fa * fb < 0;
 end
 ```
 
@@ -139,6 +154,8 @@ Note: The functions above is used to solve #2 below, same structure would be use
    c. What will happen if the bisection method is used with the function **f(x) = 1 / x − 2** and the interval is **[3, 7]**? You may try different values of tolerance if possible.
 
 Note: Codes for these problems are available in the 1_Bisection_Method file, each marked as 'a.m', 'b.m', and 'c.m'.
+
+Answer in c. Whatever tolerance we use, it will not go and proceed to solve the bisection method because it does not satisfy the first condition.
 
 ### Fixed Point Method
 
