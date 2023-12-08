@@ -6,6 +6,7 @@ The bisection method is a simple numerical technique used to find the roots of a
 ## This guide provides a complete code for the Bisection Method implemented in Octave.
 
 > <p>The Function implemented using the Algorithm for Bisection Method for root finding:</p>
+
 <pre>
     function p = bisection_method(f, a, b, TOL, N)
     printf('%-10s %-10s %-10s %-10s %-10s\n', 'n', 'An', 'Bn', 'Pn', 'f(Pn)')
@@ -104,6 +105,3 @@ Plot the values of p
   <br/>
   p = bisection_method(f, a, b, TOL, N);    # Approximate value of solution <em>p</em>
 </pre>
-
-
-
