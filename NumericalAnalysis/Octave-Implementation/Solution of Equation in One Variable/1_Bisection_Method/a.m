@@ -4,19 +4,20 @@ function main()
     clc; clear;
 
     % Main Area for Input
-    f = @(x) x^6 - x - 1;         % equation
+    f = @(x) x.^6 - x - 1; % equation
 
-    a = 1;                        % interval a
-    b = 2;                        % interval b
+    a = 1;                 % interval a
+    b = 2;                 % interval b
     TOL = 10^-5;
     N = 20;
 
     % Function calling
     result = equation_checker(f, a, b);
+
     if result == 1
-      bisection_method(f, a, b, TOL, N);
+        bisection_method(f, a, b, TOL, N);
     else
-      display("bisection's first condition not satisfied");
+        display("bisection's first condition not satisfied");
     endif
 
 end
@@ -79,4 +80,5 @@ function bisection_method(f, a, b, TOL, N)
         fprintf('\nMethod failed after %d iterations\n', N);
         fprintf('The procedure was unsuccessful.\n');
     end
+
 end

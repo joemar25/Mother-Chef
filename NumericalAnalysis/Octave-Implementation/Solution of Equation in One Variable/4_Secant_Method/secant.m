@@ -1,9 +1,3 @@
-% BSCS 4A
-% Borrero, Jan Lance A.
-% Cardiño, Joemar J.
-% Roque, Kyle Arteal B.
-% Zaragoza, Matthew A.
-
 % The main function of our program
 function main()
 
@@ -11,11 +5,12 @@ function main()
 
 
     % Main Area for Input
-    f = @(x) x^2 - 2 * x - 1;
+    f = @(x) x^4 - 2*x^2 - 4;
 
-    p_sub_0 = 2.6;
-    p_sub_1 = 2.5;
-    TOL = 0;
+    p_sub_0 = 2;
+    p_sub_1 = 3;
+    ;
+    TOL = 10^-6;
     N = 13;
 
     % Function calling
@@ -62,23 +57,3 @@ function secant(f, p_sub_0, p_sub_1, TOL, N)
     % Step 7
     fprintf('The method failed after %d iterations\n', N);
 end
-
-% input p sub 0, p sub 1, TOL, N
-% Step 1
-% Set i = 2
-%     q sub 0 = f(p sub 0)
-%     q sub 1 = f(p sub 1)
-% step 2
-% while i <= N do step 3-6
-%   step 3 set p = P sub 1 - q sub 1 (p sub 1 - p sub 0) / (q sub 1 - q sub 0). (compute p sub i)
-%   step 4 if |p-P| < TOL then
-%     OUTPUT (p); (The procedure was successful)
-%     STOP.
-%   Step 5. Set i = i + 1
-%   Step 6 Set p sub 0 = p sub 1 (Update p sub 0, q sub 0, p sub 1, q sub 1)
-%              q sub 0 = q sub 1
-%              p sub 1 = p
-%              q sub 1 = f(p)
-% Step 7 OUTPUT ('The method failed after N iterations, N=',N);
-% (The Procedure was unsuccessful)
-% STOP

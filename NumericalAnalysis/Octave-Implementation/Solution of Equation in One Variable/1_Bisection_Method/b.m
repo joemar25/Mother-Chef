@@ -4,19 +4,20 @@ function main()
     clc; clear;
 
     % Main Area for Input
-    f = @(x) e^x - x^3 - 5;        % equation
+    f = @(x) e.^x - x.^3 - 5; % equation
 
-    a = -2;                        % interval a
-    b = -1;                        % interval b
+    a = -2;                   % interval a
+    b = -1;                   % interval b
     TOL = 10^-4;
     N = 15;
 
     % Function calling
     result = equation_checker(f, a, b);
+
     if result == 1
-      bisection_method(f, a, b, TOL, N);
+        bisection_method(f, a, b, TOL, N);
     else
-      display("bisection's first condition not satisfied");
+        display("bisection's first condition not satisfied");
     endif
 
 end
@@ -76,4 +77,5 @@ function bisection_method(f, a, b, TOL, N)
         fprintf('\nMethod failed after %d iterations\n', N);
         fprintf('The procedure was unsuccessful.\n');
     end
+
 end
