@@ -5,11 +5,10 @@ function main()
 
 
     % Main Area for Input
-    f = @(x) x^4 - 2*x^2 - 4;
+    f = @(x) x.^4 - 2*x.^2 - 4;
 
     p_sub_0 = 2;
     p_sub_1 = 3;
-    ;
     TOL = 10^-6;
     N = 13;
 
