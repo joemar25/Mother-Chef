@@ -1,45 +1,68 @@
-% BSCS 4A
-% Borrero, Jan Lance A.
-% Cardiño, Joemar J.
-% Roque, Kyle Arteal B.
-% Zaragoza, Matthew A.
-
 % The main function of our program
 function main()
 
     clc; clear;
 
-    % Main Area for Input
-    A = [4, 3; 6, 3];
+    % Define your matrix A here
+    A = [
+        1 1 -1;
+        0 -2 3;
+        2 3 1
+        ];
 
-    % Function calling
+    % Call the function to perform LU factorization
     [L, U] = lu_factorization(A);
-    display(L);
 
+    % Print the L and U matrices
+    fprintf('L:\n');
+    disp(L);
+    fprintf('U:\n');
+    disp(U);
+    
 end
 
-% The Function implemented for Newton's Method
+% The Function implemented for LU Factorization Method
 function [L, U] = lu_factorization(A)
 
-    % Get the size of the matrix
-    n = size(A, 1);
+    % Step 1: Check if A is square
+    if size(A, 1) ~= size(A, 2)
+        error('Input matrix must be square');
+    end
 
-    % Initialize L and U with zeros
-    L = eye(n);
-    U = zeros(n);
+    % Step 2: Initialize L and U
+    L = eye(size(A));
+    U = zeros(size(A));
 
-    for i = 1:n
+    % Step 3: Perform LU factorization
+    for i = 1:size(A, 1)
 
-        for j = i:n
-            % Calculate entries for U
-            U(i, j) = A(i, j) - L(i, 1:i - 1) * U(1:i - 1, j);
+        % Step 4: Loop through each element below the diagonal in column i
+        for j = i + 1:size(A, 2)
+
+            % Step 5: Calculate the multiplierF
+            U(i, j) = A(i, j) / L(i, i);
+
+            % Step 6: Eliminate the lower triangular part of column j
+            for k = 1:i - 1
+                A(j, k) = A(j, k) - U(i, j) * L(j, k);
+            end
+
         end
 
-        for j = i + 1:n
-            % Calculate entries for L
-            L(j, i) = (A(j, i) - L(j, 1:i - 1) * U(1:i - 1, i)) / U(i, i);
+        % Step 7: Update the diagonal elements of L
+        % handle division by zero
+        for k = i + 1:size(A, 1)
+
+            if U(i, i) == 0
+                L(k, i) = 0;
+            else
+                L(k, i) = A(k, i) / U(i, i);
+            end
+
         end
 
     end
 
 end
+
+% Note: The LU factorization is not unique, and different algorithms or implementations may produce different decompositions.
