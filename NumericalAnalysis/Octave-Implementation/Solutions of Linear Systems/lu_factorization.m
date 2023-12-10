@@ -8,7 +8,7 @@ function main()
         1 1 -1;
         0 -2 3;
         2 3 1
-        ];
+    ];
 
     % Call the function to perform LU factorization
     [L, U] = lu_factorization(A);
@@ -18,7 +18,7 @@ function main()
     disp(L);
     fprintf('U:\n');
     disp(U);
-    
+
 end
 
 % The Function implemented for LU Factorization Method
@@ -39,8 +39,9 @@ function [L, U] = lu_factorization(A)
         % Step 4: Loop through each element below the diagonal in column i
         for j = i + 1:size(A, 2)
 
-            % Step 5: Calculate the multiplierF
+            % Step 5: Calculate the multiplier
             U(i, j) = A(i, j) / L(i, i);
+            L(i, j) = ;
 
             % Step 6: Eliminate the lower triangular part of column j
             for k = 1:i - 1

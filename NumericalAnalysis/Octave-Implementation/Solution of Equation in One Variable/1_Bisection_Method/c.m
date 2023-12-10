@@ -55,7 +55,7 @@ function bisection_method(f, a, b, TOL, N)
             fprintf('\nProcedure completed successfully. Root: %f\n', p);
 
             success = true;
-            return
+            return;
         end
 
         % Step 5

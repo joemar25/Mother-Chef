@@ -4,7 +4,7 @@ function main()
     clc; clear;
 
     % Main Area for Input
-    g = @(x) x.^x - cos(x); % equation
+    g = @(x) x.^(x - cos(x)); % equation
 
     % Try different initial approximations
     initial_approximations = [0.5, 1.0, 1.5];
