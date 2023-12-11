@@ -144,6 +144,13 @@ function gaussElim(A)
   for i = 1:n
     fprintf("x_%d = %.2f\n", i, A(i,n + 1));
   end
+  fprintf("\n");
+  fprintf("or");
+  fprintf("\n\n");
+
+  fprintf("α = %d\n", A(1,4));
+  fprintf("β = %d\n", A(2,4));
+  fprintf("γ = %d\n", A(3,4));
 end
 
 % The main function of the Gaussian Elimination with Backwards Substitution program
