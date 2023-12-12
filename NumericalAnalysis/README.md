@@ -228,6 +228,53 @@ Code Implementation:
 
 ## Matrix
 
+### Gaussian Elimination with Backward Substitution
+
+To solve the `n x n` linear system
+
+```
+E_1 : a_11x_1 + a_12X_2 + • • • + a_1nX_n = a_1,n+1
+E_2 : a_21x_1 + a_22X_2 + • • • + a_2nX_n = a_2,n+1
+ •       •         •                 •         •
+ •       •         •                 •         •
+ •       •         •                 •         •
+E_n : a_n1x_1 + a_n2X_2 + • • • + a_nnX_n = a_n,n+1
+```
+Pseudocode:
+
+```octave
+INPUT number of unknowns and equations n; augmented matrix A = [a_ij], where 1 ≤ i ≤ n and 1 ≤ j ≤ n + 1.
+OUTPUT solution x_1, x_2, ... , x_n or message that the linear system has no unique solution.
+
+Step 1 For i = 1, ... , n - 1 do Steps 2-4.   (Elimination process.)
+
+      Step 2  Let p be the smallest integer with i ≤ p ≤ n and a_pi ≠ 0. 
+              If no integer p can be found
+              then OUTPUT ('no unique solution exists');
+                   STOP.
+
+   	Step 3 If p ≠ i then perform (E_p) ↔ (E_i).
+
+      Step 4 For j = i + 1, ... , n do Steps 5 and 6.
+
+            Step 5 Set m_ji = a_ji/a_ii.
+
+            Step 6 Perform (E_j – m_jiE_i) (E_j);
+
+Step 7 If a_nn = 0 then OUTPUT ('no unique solution exists');
+                        STOP.
+
+Step 8 Set x_n = a_n,n + l / a_nn. (Start backward substitution.)
+
+Step 9 For i = n – 1, … ,1 set x_i =[a_i,n+1 - ∑_(j=i+1)^n (a_ij)x_j] / a_ii.
+
+Step 10 OUTPUT (x_1, ... , x_n); (Procedure completed successfully.)
+        STOP.
+
+```
+
+Code Implementation:
+
 ### LU Factorization
 
 To factor the `n x n` matrix A = a[i][j] into the product of the lower-triangular matrix L = l[i][j] and the upper-triangular matrix U = u[i][j]; that is, A = LU, where the main diagonal of either L or U consists of all ones:
