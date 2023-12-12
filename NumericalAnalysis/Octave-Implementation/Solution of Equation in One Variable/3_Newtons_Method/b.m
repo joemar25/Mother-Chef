@@ -15,7 +15,7 @@ function main()
 
     P = 0;
     TOL = 10^-8;
-    N = 50;
+    N = 13;
 
     % Function calling
     newtons_method(f, f_prime, P, TOL, N);

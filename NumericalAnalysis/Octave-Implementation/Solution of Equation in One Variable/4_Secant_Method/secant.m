@@ -3,7 +3,6 @@ function main()
 
     clc; clear;
 
-
     % Main Area for Input
     f = @(x) x.^4 - 2*x.^2 - 4;
 
@@ -20,7 +19,7 @@ end
 % The Function implemented for Newton's Method
 function secant(f, p_sub_0, p_sub_1, TOL, N)
 
-    fprintf("secant method\n\n%-10s %-10s %-10s %-10s %-10s %-10s\n", 'n', 'p0', 'p1', 'q0', 'q1', 'p')
+    fprintf("secant method\n\n%-10s %-10s %-10s %-10s %-10s %-10s\n", 'n', 'p0', 'p1', 'f(p0)', 'f(p1)', 'p')
 
     % Step 1
     i = 2;

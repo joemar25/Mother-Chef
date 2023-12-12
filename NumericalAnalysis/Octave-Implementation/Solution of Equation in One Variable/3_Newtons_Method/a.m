@@ -8,14 +8,14 @@ function main()
 
     % For automatic derivation
     pkg load symbolic;
-      syms sym_x;
-      sym_f = sym(f(sym_x));
+    syms sym_x;
+    sym_f = sym(f(sym_x));
     sym_df = diff(sym_f);
     f_prime = function_handle(sym_df);
 
     P = 2;
     TOL = 10^-8;
-    N = 50;
+    N = 13;
 
     % Function calling
     newtons_method(f, f_prime, P, TOL, N);
