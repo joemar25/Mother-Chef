@@ -6,13 +6,17 @@
 
 MAX_SIZE = 50;
 
-% Function of coefficients matrix A and constants vector b values
-function A = matrixVals(n)
-  A = [
-    5, 1, 1, 5;
-    1, 4, 1, 4;
-    1, 1, 3, 3;
-  ];
+% A Function to ask for the input values of coefficients matrix A and constants vector b
+function A = inputMatrix(n)
+  disp("Enter the augmented matrix [A | b]:");
+  A = zeros(n, n + 1);
+
+  for i = 1:n
+    for j = 1:n + 1
+      prompt = sprintf("A(%d,%d): ", i, j);
+      A(i,j) = input(prompt);
+    end
+  end
 end
 
 % A Function to Display the Matrix in Linear System Form
@@ -156,8 +160,11 @@ end
 % The main function of the Gaussian Elimination with Backwards Substitution program
 function main()
 
-  % Call matrixVals to define A
-  A = matrixVals();
+  clc; clear;
+
+  % Asks for the user input values of the augmented matrix [A | b]
+  n = input("Enter the number of unknowns and equations (n): ");
+  A = inputMatrix(n);
 
   % Display the Matrix in Linear System Form
   fprintf("\nThe Linear System:\n");
