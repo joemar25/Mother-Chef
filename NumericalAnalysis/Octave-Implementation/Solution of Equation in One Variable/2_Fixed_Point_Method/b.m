@@ -14,35 +14,35 @@ function main()
 end
 
 % Function to perform Fixed-Point Iteration and plot the result
-function iterate_and_plot(g, initial_approximations)
+  function iterate_and_plot(g, initial_approximations)
 
-    fprintf('Fixed-Point Iteration\n');
+      fprintf('Fixed-Point Iteration\n');
 
-    % Initialize arrays to store results for later plotting
-    successful_points = [];
-    unsuccessful_points = [];
+      % Initialize arrays to store results for later plotting
+      successful_points = [];
+      unsuccessful_points = [];
 
-    for i = 1:length(initial_approximations)
-        p = initial_approximations(i);
-        TOL = 1e-10; % tolerance
-        N = 50;      % max num of iterations
+      for i = 1:length(initial_approximations)
+          p = initial_approximations(i);
+          TOL = 10^-10; % tolerance
+          N = 50;      % max num of iterations
 
-        % Function calling
-        [success, root] = fixed_point_iteration(g, p, TOL, N);
+          % Function calling
+          [success, root] = fixed_point_iteration(g, p, TOL, N);
 
-        % Display results and update arrays for plotting
-        if success
-            fprintf('Initial approximation %.1f: Iteration succeeded. Root: %.10f\n', p, root);
-            successful_points = [successful_points; p, root];
-        else
-            fprintf('Initial approximation %.1f: Iteration failed after %d iterations\n', p, N);
-            unsuccessful_points = [unsuccessful_points; p];
-        end
-    end
+          % Display results and update arrays for plotting
+          if success
+              fprintf('Initial approximation %.1f: Iteration succeeded. Root: %.10f\n', p, root);
+              successful_points = [successful_points; p, root];
+          else
+              fprintf('Initial approximation %.1f: Iteration failed after %d iterations\n', p, N);
+              unsuccessful_points = [unsuccessful_points; p];
+          end
+      end
 
-    % Plot the function, y=x line, and fixed points using fplot
-    plot_function(g, successful_points, unsuccessful_points);
-end
+      % Plot the function, y=x line, and fixed points using fplot
+      plot_function(g, successful_points, unsuccessful_points);
+  end
 
 % Function to perform Fixed-Point Iteration
 function [success, root] = fixed_point_iteration(g, p, TOL, N)

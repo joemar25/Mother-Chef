@@ -24,7 +24,7 @@ function iterate_and_plot(g, initial_approximations)
 
     for i = 1:length(initial_approximations)
         p = initial_approximations(i);
-        TOL = 1e-10; % tolerance
+        TOL = 10^-10; % tolerance
         N = 50;      % max num of iterations
 
         % Function calling

@@ -23,7 +23,9 @@ end
 
 function result = equation_checker(f, a, b)
     fa = f(a);
+    printf("f(a) = %d\n", fa);
     fb = f(b);
+    printf("f(b) = %d\n", fa);
 
     result = fa * fb < 0;
 end
