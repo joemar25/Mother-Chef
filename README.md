@@ -893,4 +893,7 @@ class COURSEREG {
 
 ---
 
+the random codes area also part here
+and a project in numerical analysis
+
 # ` "Thank You For Reading This File" `
