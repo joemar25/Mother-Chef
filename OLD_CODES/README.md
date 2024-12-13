@@ -1,4 +1,4 @@
-<h1> Programming Problems and Solution </h3>
+# Programming Problems and Solution
 
 ```Markdown
 The programming language used to solve the problems here in this Journey is Java.
@@ -10,7 +10,7 @@ Though I am using different other languages now for different purposes and schoo
 Now, I am challenging myself to become much better using this language to become a better problem solver.
 ```
 
-<h2> Tables of Contents </h2>
+## Tables of Contents
 
 1. [The Cheaper Cab](#the-cheaper-cab)
 2. [Rating Improvement](#rating-improvement)
@@ -23,8 +23,6 @@ Now, I am challenging myself to become much better using this language to become
 9. [Credit Score](#credit-score)
 10. [Enormous Input Test](#enormous-input-test)
 11. [Course Registration](#course-registration)
-12. [New2](#new2)
-13. [New3](#new3)
 
 ---
 
@@ -37,7 +35,7 @@ Status          : Correct Answer
 Submission ID   : 68012123
 ```
 
-</h3> Problem </h3>
+### Problem
 
 Chef has to travel to another place. For this, he can avail any one of two cab services.
 
@@ -46,23 +44,23 @@ Chef has to travel to another place. For this, he can avail any one of two cab s
 
 Chef wants to spend the minimum amount of money. Which cab service should Chef take?
 
-<h3> Input Format </h3>
+### Input Format
 
 - The first line will contain `T` - the number of test cases. Then the test cases follow.
 - The first and only line of each test case contains two integers `X` and `Y` - the prices of first and second cab services respectively.
 
-<h3> Output Format </h3>
+### Output Format
 
 For each test case, output FIRST if the first cab service is cheaper, output SECOND if the second cab service is cheaper, output ANY if both cab services have the same price.
 
 You may print each character of FIRST, SECOND and ANY in uppercase or lowercase (for example, any, aNy, Any will be considered identical).
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 100
 - 1 ≤ X, Y ≤ 100
 
-<h3> Sample </h3>
+### Sample
 
 | Input     | Output  |
 | :---------| :------ |
@@ -71,7 +69,7 @@ You may print each character of FIRST, SECOND and ANY in uppercase or lowercase 
 | 42 42     | ANY     |
 | 90 50     | SECOND  |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test case 1: The first cab service is cheaper than the second cab service.
@@ -81,7 +79,7 @@ Test case 2: Both the cab services have the same price.
 Test case 3: The second cab service is cheaper than the first cab service.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -123,26 +121,26 @@ Status          : Correct Answer
 Submission ID   : 68015253
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Chef's current rating is `X`, and he wants to improve it. It is generally recommended that a person with rating `X` should solve problems whose difficulty lies in the range [X, X + 200][X, X + 200], i.e, problems whose difficulty is at least `X` and at most X+200X + 200.
 
-You find out that Chef is currently solving problems with a difficulty of `Y`.
+- You find out that Chef is currently solving problems with a difficulty of `Y`.
 
-Is Chef following the recommended practice or not?
+- Is Chef following the recommended practice or not?
 
-<h3> Input Format </h3>
+### Input Format
 
 For each test case, output on a new line YES if Chef is following the recommended practice style, and NO otherwise.
 
 Each letter of the output may be printed in either lowercase or uppercase. For example, the strings YES, yEs, and Yes will be considered identical.
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 100
 - 1 ≤ X, Y ≤ 4000
 
-<h3> Sample </h3>
+### Sample
 
 | Input     | Output  |
 | :---------| :------ |
@@ -153,7 +151,7 @@ Each letter of the output may be printed in either lowercase or uppercase. For e
 | 723 805   | YES     |
 | 1330 512  | NO      |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test case 1: Chef's current rating is 1300, so he should solve problems with difficulty lying in [1300,1500][1300,1500]. Since 1500 lies in [1300,1500][1300,1500], Chef is doing his practice in a recommended way :)
@@ -167,7 +165,7 @@ Test case 4: Chef's current rating is 723, so he should solve problems with diff
 Test case 5: Chef's current rating is 1330, so he should solve problems with difficulty lying in [1330,1530][1330,1530]. Since 512 does not lie in [1330,1530][1330,1530], Chef is not doing his practice in a recommended way :(
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -206,26 +204,26 @@ Status          : Correct Answer
 Submission ID   : 68019500
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Chef is watching TV. The current volume of the TV is `X`. Pressing the volume up button of the TV remote increases the volume by 1 while pressing the volume down button decreases the volume by 1. Chef wants to change the volume from `X` to `Y`. Find the minimum number of button presses required to do so.
 
-<h3> Input Format </h3>
+### Input Format
 
 - The first line contains a single integer TT - the number of test cases. Then the test cases follow.
 
 - The first and only line of each test case contains two integers `X` and `Y` - the initial volume and final volume of the TV.
 
-<h3> Output Format </h3>
+### Output Format
 
 For each test case, output the minimum number of times Chef has to press a button to change the volume from `X` to `Y`.
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 100
 - 1 ≤ X, Y ≤ 100
 
-<h3> Sample </h3>
+### Sample
 
 | Input | Output  |
 | :-----| :------ |
@@ -233,7 +231,7 @@ For each test case, output the minimum number of times Chef has to press a butto
 | 50 54 | 4       |
 | 12 10 | 2       |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test Case 1: Chef can press the volume up button 44 times to increase the volume from 5050 to 5454.
@@ -241,7 +239,7 @@ Test Case 1: Chef can press the volume up button 44 times to increase the volume
 Test Case 2: Chef can press the volume down button 22 times to decrease the volume from 1212 to 1010.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -278,27 +276,27 @@ Status          : Correct Answer
 Submission ID   : 68026668
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is `X` km away from his home.
 
 If his office is open on 55 days in a week, find the number of kilometers Chef travels through office trips in a week.
 
-<h3> Input Format </h3>
+### Input Format
 
 - First line will contain `T`, number of test cases. Then the test cases follow.
 - Each test case contains of a single line consisting of single integer `X`.
 
-<h3> Output Format </h3>
+### Output Format
 
 For each test case, output the number of kilometers Chef travels through office trips in a week.
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 10
 - 1 ≤ X ≤ 10
 
-<h3> Sample </h3>
+### Sample
 
 | Input | Output  |
 | :-----| :------ |
@@ -308,7 +306,7 @@ For each test case, output the number of kilometers Chef travels through office 
 | 7     | 70      |
 | 10    | 100     |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test case 1: The office is 1 km away. Thus, to go to the office and come back home, Chef has to walk 2 kms in a day. In a week with 5 working days, Chef has to travel 2⋅5 = 102⋅5=10 kms in total.
@@ -320,7 +318,7 @@ Test case 3: The office is 7 kms away. Thus, to go to the office and come back h
 Test case 4: The office is 10 kms away. Thus, to go to the office and come back home, Chef has to walk 20 kms in a day. In a week with 5 working days, Chef has to travel 20⋅5 = 10020⋅5=100 kms in total.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -349,23 +347,23 @@ Status          : Correct Answer
 Submission ID   : 68027028
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US.
 
 Calculate Pooja's account balance after an attempted transaction.
 
-<h3> Input Format </h3>
+### Input Format
 
 - Positive integer 0 < X <= 2000 - the amount of cash which Pooja wishes to withdraw.
 
 - Nonnegative number 0<= Y <= 2000 with two digits of precision - Pooja's initial account balance.
 
-<h3> Output Format </h3>
+### Output Format
 
 Output the account balance after the attempted transaction, given as a number with two digits of precision. If there is not enough money in the account to complete the transaction, output the current bank balance.
 
-<h3> Example - Successful Transaction </h3>
+### Example - Successful Transaction
 
 ```
 Input:
@@ -375,7 +373,7 @@ Output:
 89.50
 ```
 
-<h3> Example - Incorrect Withdrawal Amount (not multiple of 5) </h3>
+### Example - Incorrect Withdrawal Amount (not multiple of 5)
 
 ```
 Input:
@@ -385,7 +383,7 @@ Output:
 120.00
 ```
 
-<h3> Example - Insufficient Funds </h3>
+### Example - Insufficient Funds
 
 ```
 Input:
@@ -395,7 +393,7 @@ Output:
 120.00
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -430,26 +428,26 @@ Status          : Correct Answer
 Submission ID   : 68027384
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Chef took an examination two times. In the first attempt, he scored `X` marks while in the second attempt he scored `Y` marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score. Determine the final score of the Chef.
 
-<h3> Input Format </h3>
+### Input Format
 
 - The first line contains a single integer TT — the number of test cases. Then the test cases follow.
 
 - The first line of each test case contains two integers `X` and `Y` — the marks scored by Chef in the first attempt and second attempt respectively.
 
-<h3> Output Format </h3>
+### Output Format
 
 For each test case, output the final score of Chef in the examination.
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 1000
 - 1 ≤ X, Y ≤ 1000
 
-<h3> Sample </h3>
+### Sample
 
 | Input | Output  |
 | :-----| :------ |
@@ -459,7 +457,7 @@ For each test case, output the final score of Chef in the examination.
 | 50 50 | 50      |
 | 1 100 | 100     |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test Case 1: The best score out of the two attempts is 60.
@@ -469,7 +467,7 @@ Test Case 2: The best score out of the two attempts is 67.
 Test Case 3: The best score out of the two attempts is 50.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -505,30 +503,30 @@ Status          : Correct Answer
 Submission ID   : 68030424
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Ezio can manipulate at most `X` number of guards with the apple of eden.
 
 Given that there are `Y` number of guards, predict if he can safely manipulate all of them.
 
-<h3> Input Format </h3>
+### Input Format
 
 - First line will contain TT, number of test cases. Then the test cases follow.
 
 - Each test case contains of a single line of input, two integers `X` and `Y`.
 
-<h3> Output Format </h3>
+### Output Format
 
 For each test case, print YES if it is possible for Ezio to manipulate all the guards. Otherwise, print NO.
 
 You may print each character of the string in uppercase or lowercase (for example, the strings YeS, yEs, yes and YES will all be treated as identical).
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 100
 - 1 ≤ X, Y ≤ 100
 
-<h3> Sample </h3>
+### Sample
 
 | Input | Output  |
 | :-----| :------ |
@@ -537,7 +535,7 @@ You may print each character of the string in uppercase or lowercase (for exampl
 | 6 6   | YES     |
 | 9 1   | YES     |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test Case 1: Ezio can manipulate at most 5 guards. Since there are 7 guards, he cannot manipulate all of them.
@@ -547,7 +545,7 @@ Test Case 2: Ezio can manipulate at most 6 guards. Since there are 6 guards, he 
 Test Case 3: Ezio can manipulate at most 9 guards. Since there is only 1 guard, he can manipulate the guard.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -580,7 +578,7 @@ Status          : Correct Answer
 Submission ID   : 68260282
 ```
 
-<h3> Problem </h3>
+### Problem
 
 Chef is struggling to pass a certain college course.
 
@@ -588,26 +586,26 @@ The test has a total of `N` question, each question carries `3` marks for a corr
 
 Will Chef be able to pass the exam or not?
 
-<h3> Input Format </h3>
+### Input Format
 
 - First line will contain `T`, number of testcases. Then the testcases follow.
 
 - Each testcase contains of a single line of input, three integers `N`, `X`, `P`.
 
-<h3> Output Format </h3>
+### Output Format
 
 For each test case output "PASS" if Chef passes the exam and "FAIL" if Chef fails the exam.
 
 You may print each character of the string in uppercase or lowercase (for example, the strings "pAas", "pass", "Pass" and "PASS" will all be treated as identical).
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 1000
 - 1 ≤ N ≤ 100
 - 0 ≤ X ≤ N
 - 0 ≤ P ≤ 3 ⋅ N
 
-<h3> Sample </h3>
+### Sample
 
 | Input | Output    |
 | :------ | :------ |
@@ -616,7 +614,7 @@ You may print each character of the string in uppercase or lowercase (for exampl
 | 5 2 4   | FAIL    |
 | 4 0 0   | FAIL    |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test Case 1: Chef gets `2` questions correct giving him `6` marks and since he got `3` questions incorrect so he faces a penalty of `-3`. So Chef's final score is `3` and the passing marks are also `3`, so he passes the exam :)
@@ -626,7 +624,7 @@ Test Case 2: Chef's total marks are `3` and since the passing marks are `4`, Che
 Test Case 3: Chef got all the problems wrong and thus his total score is `-4`. Since the passing marks are `0`, Chef fails the exam :(
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -668,56 +666,56 @@ Status          : Correct Answer
 Submission ID   : 68424065
 ```
 
-<h3> Problem </h3>
+### Problem
 
 To access CRED programs, one needs to have a credit score of `750` or more.
 Given that the present credit score is `X`, determine if one can access CRED programs or not.
 
 If it is possible to access CRED programs, output `YES`, otherwise output `NO`.
 
-<h3> Input Format </h3>
+### Input Format
 
 - The first and only line of input contains a single integer `X`, the credit score.
 
-<h3> Output Format </h3>
+### Output Format
 
 Print `YES` if it is possible to access CRED programs. Otherwise, print `NO`.
 
 You may print each character of the string in uppercase or lowercase (for example, the strings `YeS`, `yEs`, `yes` and `YES` will all be treated as identical).
 
-<h3> Constraints </h3>
+### Constraints
 
 - 0 ≤ X ≤ 1000
 
-<h3> Subtasks </h3>
+### Subtasks
 
 - Subtask 1 (100 points): Original constraints.
 
-<h3> Sample 1 </h3>
+### Sample 1
 
 | Input   | Output  |
 | :------ | :------ |
 | 821     | YES     |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Since 823 ≥ 750, it is possible to access CRED programs.
 ```
 
-<h3> Sample 2 </h3>
+### Sample 2
 
 | Input   | Output  |
 | :------ | :------ |
 | 251     | NO      |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Since 251 < 750, it is not possible to access CRED programs.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -754,19 +752,19 @@ Status          : Correct Answer
 Submission ID   : 68424297
 ```
 
-<h3> Problem </h3>
+### Problem
 
 The purpose of this problem is to verify whether the method you are using to read input data is sufficiently fast to handle problems branded with the enormous Input/Output warning. You are expected to be able to process at least 2.5MB of input data per second at runtime.
 
-<h3> Input </h3>
+### Input
 
 The input begins with two positive integers n k (n, k<=107). The next n lines of input contain one positive integer ti, not greater than 109, each.
 
-<h3> Output </h3>
+### Output
 
 Write a single integer to output, denoting how many integers ti are divisible by k.
 
-<h3> Sample 1 </h3>
+### Sample 1
 
 | Input      | Output  |
 | :--------- | :------ |
@@ -779,13 +777,13 @@ Write a single integer to output, denoting how many integers ti are divisible by
 | 999996     |         |
 | 11         |         |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 The integers divisible by 33 are 51, 966369, 9 and 999996. Thus, there are 4 integers in total.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -820,23 +818,23 @@ Status          : Correct Answer
 Submission ID   : 68439823
 ```
 
-<h3> Problem </h3>
+### Problem
 
 There is a group of `N` friends who wish to enroll in a course together. The course has a maximum capacity of `M` students that can register for it. If there are `K` other students who have already enrolled in the course, determine if it will still be possible for all the `N` friends to do so or not.
 
-<h3> Input Format </h3>
+### Input Format
 
 - The first line contains a single integer `T` - the number of test cases. Then the test cases follow.
 
 - Each test case consists of a single line containing three integers `N`, `M` and `K` - the size of the friend group, the capacity of the course and the number of students already registered for the course.
 
-<h3> Constraints </h3>
+### Constraints
 
 - 1 ≤ T ≤ 1000
 - 1 ≤ N ≤ M ≤ 100
 - 0 ≤ K ≤ M
 
-<h3> Sample 1 </h3>
+### Sample 1
 
 | Input     | Output |
 | :-------- | :----- |
@@ -845,7 +843,7 @@ There is a group of `N` friends who wish to enroll in a course together. The cou
 | 5 40 38   | No     |
 | 100 100 0 | Yes    |
 
-<h3> Explanation </h3>
+### Explanation
 
 ```Markdown
 Test Case 1: The 2 friends can enroll in the course as it has enough seats to accommodate them and the 27 other students at the same time..
@@ -853,7 +851,7 @@ Test Case 1: The 2 friends can enroll in the course as it has enough seats to ac
 Test Case 2: The course does not have enough seats to accommodate the 5 friends and the 38 other students at the same time.
 ```
 
-<h3> My Solution </h3>
+### My Solution
 
 ```Java
 import java.util.Scanner;
@@ -882,7 +880,6 @@ class COURSEREG {
 }
 ```
 
-
 // M1ENROL : 68520744
 
 // ACCURACY: 68528722
@@ -896,4 +893,4 @@ class COURSEREG {
 the random codes area also part here
 and a project in numerical analysis
 
-# ` "Thank You For Reading This File" `
+### ` "Thank You For Reading This File" `
