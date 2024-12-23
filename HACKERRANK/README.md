@@ -12,6 +12,7 @@ Welcome to my coding journey! This repository is a collection of solutions to Ha
 6. [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum)  
 7. [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles)  
 8. [Time Conversion](https://www.hackerrank.com/challenges/time-conversion)  
+9. [Grading Student](https://www.hackerrank.com/challenges/grading)
 
 ---
 
