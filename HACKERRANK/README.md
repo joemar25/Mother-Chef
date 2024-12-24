@@ -50,3 +50,8 @@ def example_function():
 1. Clone this repository to your local machine.  
 2. Explore the solutions in the corresponding directories.  
 3. Feel free to suggest optimizations or alternative solutions
+
+## Cpp Focus
+
+1. [Input and Output](https://www.hackerrank.com/challenges/cpp-input-and-output)
+2. a
